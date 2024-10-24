@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký tài khoản</title>
+    <link href="/assets/image/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/css/bootstrap.min.css" />
+    <script src="/public/Taotk.js"></script>
+  </head>
+  <body>
+    <div id="wrapper" class="container d-flex align-items-center">
+      <div class="row w-100">
+        <!-- Cột chứa hình ảnh -->
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex align-items-center justify-content-center order-md-1 order-2 mt-3 mt-md-0"
+        >
+          <img src="/assets/image/register.jpg" alt="Đăng ký" class="img-fluid" />
+        </div>
+
+        <!-- Cột chứa form -->
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex align-items-center order-md-2 order-1"
+        >
+          <form name="a" class="w-100 p-4">
+            <h1 class="text-start text-uppercase h3 py-3">Đăng Ký Tài Khoản</h1>
+            <div class="form-group my-4">
+              <label for="lastname"
+                >Họ của bạn <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group my-4">
+              <label for="fristname"
+                >Tên của bạn <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                name="fristname"
+                id="fristname"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group my-4">
+              <label for="phone"
+                >Số điện thoại <span class="text-danger">*</span></label
+              >
+              <input type="text" name="phone" id="phone" class="form-control" />
+            </div>
+            <div class="form-group my-4">
+              <label for="email"
+                >Địa chỉ email của bạn <span class="text-danger">*</span></label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group my-4">
+              <label for="password"
+                >Mật khẩu <span class="text-danger">*</span></label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+              />
+            </div>
+            <div class="form-check p-1">
+              <input type="checkbox" name="dongy" required /> Đồng ý với Chính
+              sách, quy định chung và Thông báo bảo mật cá nhân
+            </div>
+            <class="d-flex align-items-center mt-3">
+              <input
+                type="button"
+                value="Tạo Tài Khoản"
+                class="btn btn-danger me-2"
+                onclick="kiemtra(document.forms.a)"
+              />
+                <span>
+                  Bạn đã có tài khoản?
+                  <a href="#" onclick="dangnhapngay(document.forms.a)"
+                    >Đăng nhập ngay</a
+                  >
+                </span>
+              
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
