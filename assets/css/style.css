@@ -1,7 +1,7 @@
 .navbar {
   background-color: rgb(251, 148, 31);
   height: 80px;
-  border-radius: 10px;
+
   padding: 0.5rem;
 }
 .navbar-brand {
@@ -63,4 +63,8 @@
 }
 .offcanvas-body {
   background-color: rgb(251, 148, 31);
+}
+
+#carouselExampleDark {
+  margin-top: 80px;
 }
