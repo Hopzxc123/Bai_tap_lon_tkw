@@ -5,16 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng ký tài khoản</title>
     <link href="/assets/image/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
+
     <script src="/assets/javascript/Taotk.js"></script>
   </head>
   <body>
-    <div class="menu bg-dark bg-opacity-10 fixed-top">
-      <div class="menu__container">
-        <div class="menu__container--content row">u</div>
+    <!-- Navbar header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">Logo</a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cà Phê</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Chuyện Nhà </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cảm Hứng CloudFee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cửa Hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Tuyển Dụng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="login-button">Login</a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-    </div>
+    </nav>
+    <!-- end navbar  -->
     <div id="wrapper" class="container d-flex align-items-center registration">
       <div class="row w-100 registration__row">
         <!-- Cột chứa hình ảnh -->
