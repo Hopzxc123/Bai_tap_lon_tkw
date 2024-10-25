@@ -68,3 +68,14 @@
 #carouselExampleDark {
   margin-top: 80px;
 }
+.card {
+  max-width: 35em;
+  flex-direction: row;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.card img {
+  max-width: 25%;
+  border-radius: 8px;
+  margin: 5px;
+}
