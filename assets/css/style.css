@@ -1,18 +1,18 @@
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(184, 99, 3);
   height: 80px;
   border-radius: 10px;
   padding: 0.5rem;
 }
 .navbar-brand {
   font-weight: 500;
-  color: #b76104;
+  color: #fff;
   font-size: 24px;
   transition: 0.3s color;
 }
 .login-button {
-  background-color: #b76104;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-size: 14px;
   padding: 8px 20px;
   border-radius: 50px;
@@ -21,8 +21,7 @@
 }
 
 .login-button:hover {
-  background-color: #b76104;
-  color: #000;
+  background-color: #fff;
 }
 .navbar-toggler {
   border: none;
@@ -34,7 +33,7 @@
   outline: none;
 }
 .nav-link {
-  color: #000;
+  color: #fff;
   font-weight: 500;
   position: relative;
 }
@@ -50,7 +49,7 @@
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #b76104;
+    background-color: #000;
     visibility: hidden;
     transition: 0.3s ease-in-out;
   }
