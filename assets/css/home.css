@@ -46,7 +46,7 @@ ul {
   height: 35px;
 }
 
-.list-nav-item {
+.list-tab-item {
   margin: 0 auto;
   width: 1400px;
   display: flex;
@@ -54,7 +54,7 @@ ul {
   justify-content: center;
 }
 
-.nav-item {
+.tab-item {
   width: 11.11%;
 }
 
@@ -64,7 +64,7 @@ ul {
   text-align: center;
 }
 
-.nav-item .item {
+.tab-item .item {
   margin: 10px 20px 0 20px;
   width: 100px;
   height: 150px;
@@ -72,20 +72,20 @@ ul {
   justify-content: center;
 }
 
-.nav-item .item img {
+.tab-item .item img {
   width: 50%;
   margin-top: 25px;
   margin-left: 25px;
 }
 
-.nav-item .item .image {
+.tab-item .item .image {
   background-color: #fff7e6;
   width: 100px;
   height: 100px;
   border-radius: 999px;
 }
 
-.nav-item .item .image:hover{
+.tab-item .item .image:hover{
   background-color: rgb(255, 231, 186);
 }
 
@@ -187,4 +187,47 @@ ul {
   width: 100%;
 }
 
+.box{
+  background-color: #fa8c16;
+}
 
+.container-box{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.container-box .introduce{
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 50px;
+}
+
+.container-box .introduce p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.container-box .logo img{
+  width: 110px;
+}
+
+
+.container-box  .newapp img{
+  width: 800px;
+}
+
+.container-box .download-app{
+  display: flex;
+  justify-content: center;
+}
+
+.container-box .download-app img{
+  width: 150px;
+  margin: 10px;
+}
