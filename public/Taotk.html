@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký tài khoản</title>
+    <link href="/assets/image/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/javascript/Taotk.js"></script>
+  </head>
+  <body>
+    <!-- Navbar header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">Logo</a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cà Phê</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Chuyện Nhà </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cảm Hứng CloudFee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cửa Hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Tuyển Dụng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="login-button">Login</a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- end navbar  -->
+    <div id="wrapper" class="container d-flex align-items-center registration">
+      <div class="row w-100 registration__row">
+        <!-- Cột chứa hình ảnh -->
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex align-items-center justify-content-center order-md-1 order-2 mt-3 mt-md-0 registration__image-wrapper"
+        >
+          <img
+            src="/assets/image/register.jpg"
+            alt="Đăng ký"
+            class="img-fluid registration__image"
+          />
+        </div>
+
+        <!-- Cột chứa form -->
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex align-items-center order-md-2 order-1 registration__form-wrapper"
+        >
+          <form name="a" class="w-100 p-4 registration__form">
+            <h1 class="text-start text-uppercase h3 py-3 registration__title">
+              Đăng Ký Tài Khoản
+            </h1>
+
+            <div class="form-group my-4 registration__field">
+              <label for="lastname"
+                >Họ của bạn <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                class="form-control registration__input"
+              />
+            </div>
+
+            <div class="form-group my-4 registration__field">
+              <label for="fristname"
+                >Tên của bạn <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                name="fristname"
+                id="fristname"
+                class="form-control registration__input"
+              />
+            </div>
+
+            <div class="form-group my-4 registration__field">
+              <label for="phone"
+                >Số điện thoại <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                class="form-control registration__input"
+              />
+            </div>
+
+            <div class="form-group my-4 registration__field">
+              <label for="email"
+                >Địa chỉ email của bạn <span class="text-danger">*</span></label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control registration__input"
+              />
+            </div>
+
+            <div class="form-group my-4 registration__field">
+              <label for="password"
+                >Mật khẩu <span class="text-danger">*</span></label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control registration__input"
+              />
+            </div>
+
+            <div class="form-check p-1 registration__terms">
+              <input
+                type="checkbox"
+                name="dongy"
+                required
+                class="registration__checkbox"
+              />
+              Đồng ý với Chính sách, quy định chung và Thông báo bảo mật cá nhân
+            </div>
+
+            <div class="d-flex align-items-center mt-3 registration__actions">
+              <input
+                type="button"
+                value="Tạo Tài Khoản"
+                class="btn btn-danger me-2 registration__submit"
+                onclick="kiemtra(document.forms.a)"
+              />
+              <span class="registration__login-prompt">
+                Bạn đã có tài khoản?
+                <a
+                  href="#"
+                  onclick="dangnhapngay(document.forms.a)"
+                  class="registration__login-link"
+                  >Đăng nhập ngay</a
+                >
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
