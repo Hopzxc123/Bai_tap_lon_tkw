@@ -89,28 +89,32 @@ ul {
   background-color: rgb(255, 231, 186);
 }
 
-.list-menu-item {
+.container-list-menu{
   margin: 0 auto;
   width: 1400px;
+}
+
+.list-menu-item {
   display: flex;
   flex-wrap: wrap;
 }
 
-.block-item {
-  height: 90%;
+.menu-item .block-item {
+  padding: 10px;
+}
+
+.menu-item .block{
+  border: 2pxx solid black;
+  box-shadow: 10px 10px 30px #c1bfbf;
+  border-radius: 10px;
 }
 
 .menu-item {
   width: 16.666%;
+  margin: 16px 0 0;
+  padding:0 10px;
 }
 
-.block-item {
-  margin: 15px;
-  padding: 10px;
-  border: 2pxx solid black;
-  background-color: aliceblue;
-  border-radius: 10px;
-}
 
 .block-item .name-item {
   width: 100%;
