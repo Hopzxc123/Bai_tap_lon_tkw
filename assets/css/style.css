@@ -7,6 +7,11 @@
 
   padding: 0.5rem;
 }
+@media (max-width: 414px) {
+  .navbar-brand {
+    width: 50%;
+  }
+}
 .login-button {
   background-color: #fff;
   color: #000;
