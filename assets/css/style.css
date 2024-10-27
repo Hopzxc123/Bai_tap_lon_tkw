@@ -1,14 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 .navbar {
   background-color: rgb(251, 148, 31);
   height: 80px;
 
   padding: 0.5rem;
-}
-.navbar-brand {
-  font-weight: 500;
-  color: #fff;
-  font-size: 24px;
-  transition: 0.3s color;
 }
 .login-button {
   background-color: #fff;
@@ -68,14 +65,57 @@
 #carouselExampleDark {
   margin-top: 80px;
 }
+/* noi dung  */
 .card {
-  max-width: 35em;
   flex-direction: row;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .card img {
-  max-width: 25%;
+  height: 100px;
+  width: 100px;
   border-radius: 8px;
-  margin: 5px;
+  background-size: cover;
+  align-self: center;
+}
+.nav__store .nav-link {
+  color: rgb(251, 148, 31);
+  font-size: larger;
+}
+.nav__store .nav-link:hover {
+  color: #fff;
+  background-color: rgb(251, 148, 31);
+}
+.nav__store .nav-link::before {
+  visibility: hidden;
+}
+.nav__store .nav-link.active {
+  color: #fff;
+  background-color: rgb(251, 148, 31);
+}
+@media (max-width: 992px) {
+  .store-item {
+    padding-bottom: 26px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container-tabs,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1052px) {
+  .container-tabs,
+  .container-lg {
+    max-width: 1020px;
+  }
+}
+@media (min-width: 1260px) {
+  .container-tabs,
+  .container-lg {
+    max-width: 1230px;
+  }
 }
