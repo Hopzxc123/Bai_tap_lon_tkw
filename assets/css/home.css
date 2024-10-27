@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.banner-item a img {
+  width: 100%;
+}
+
+.contaier {
+  margin-top: 30px;
+}
+
+.menu {
+  margin: 50px 0;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-header p {
+  font-size: 35px;
+}
+
+.menu-header img {
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.list-tab-item {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab-item {
+  width: 11.11%;
+}
+
+.card-content h5 {
+  margin-top: 5px;
+  color: #b2b2b2;
+  text-align: center;
+}
+
+.tab-item .item {
+  margin: 10px 20px 0 20px;
+  width: 100px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-item .item img {
+  width: 50%;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.tab-item .item .image {
+  background-color: #fff7e6;
+  width: 100px;
+  height: 100px;
+  border-radius: 999px;
+}
+
+.tab-item .item .image:hover{
+  background-color: rgb(255, 231, 186);
+}
+
+.container-list-menu{
+  margin: 0 auto;
+  width: 1400px;
+}
+
+.container-list-menu .title{
+  margin: 50px 0 10px 20px;
+}
+
+.list-menu-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item .block-item {
+  padding: 10px;
+}
+
+.menu-item .block{
+  border: 2pxx solid black;
+  box-shadow: 10px 10px 30px #e1e1e1;
+  border-radius: 10px;
+}
+
+.menu-item {
+  width: 16.666%;
+  margin: 16px 0 0;
+  padding:0 10px;
+}
+
+
+.block-item .name-item {
+  width: 100%;
+  height: 50px;
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 7%;
+}
+
+.name-item h4 {
+  font-size: 15px;
+  margin: 10px 0;
+  word-spacing: 4px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item p {
+  padding-top: 10px;
+  color: #262626;
+}
+
+.price-item .add {
+  padding: 10px;
+  border-radius: 999px;
+  width: 36px;
+  height: 36px;
+  background-color: #fa8c16;
+}
+
+.news {
+  margin: 50px 0;
+}
+
+.list-news-item {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newspaper {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.newspaper p {
+  font-size: 35px;
+}
+
+.newspaper img {
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.news-item{
+  width: 25%;
+  padding: 15px;
+}
+
+.news-item img{
+  width: 100%;
+}
+
+.box{
+  background-color: #fa8c16;
+}
+
+.container-box{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.container-box .introduce{
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 50px;
+}
+
+.container-box .introduce p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.container-box .logo img{
+  width: 110px;
+}
+
+
+.container-box  .newapp img{
+  width: 800px;
+}
+
+.container-box .download-app{
+  display: flex;
+  justify-content: center;
+}
+
+.container-box .download-app img{
+  width: 150px;
+  margin: 10px;
+}
