@@ -1,43 +1,18 @@
-function loadContent(){
-    const urlParams = new URLSearchParams(window.location.search);
-    const form = urlParams.get('form');
+function showSection(sectionId) {
+    // Ẩn tất cả các phần
+    const sections = document.querySelectorAll('.news-section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
 
-    document.getElementById('form-a').style.display = 'none';
-    document.getElementById('form-b').style.display = 'none';
-    document.getElementById('form-c').style.display = 'none';
-    document.getElementById('form-d').style.display = 'none';
-    document.getElementById('form-e').style.display = 'none';
-    document.getElementById('form-f').style.display = 'none';
-    document.getElementById('form-g').style.display = 'none';
-    document.getElementById('form-h').style.display = 'none';
-
-    if(form === 'a'){
-        document.getElementById('form-a').style.display = 'block';
-    } 
-    else if(form === 'b'){
-        document.getElementById('form-b').style.display = 'block';
-    }
-    else if(form === 'c'){
-        document.getElementById('form-c').style.display = 'block';
-    }
-    else if(form === 'd'){
-        document.getElementById('form-d').style.display = 'block';
-    }
-    else if(form === 'e'){
-        document.getElementById('form-e').style.display = 'block';
-    }
-    else if(form === 'f'){
-        document.getElementById('form-f').style.display = 'block';
-    }
-    else if(form === 'g'){
-        document.getElementById('form-g').style.display = 'block';
-    }
-    else if(form === 'h'){
-        document.getElementById('form-h').style.display = 'block';
-    }
-    else{
-        document.getElementById('error').innerText = 'Không tìm thấy nội dung.';
+    // Hiển thị phần tương ứng
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+        targetSection.classList.add('active');
     }
 }
 
-window.onload = loadContent;
+// Hiển thị phần đầu tiên mặc định khi trang tải
+window.onload = function() {
+    showSection('CF'); // Hiển thị phần #COFFEELOVER mặc định
+};

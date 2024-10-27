@@ -1,74 +1,18 @@
-*{
-    box-sizing: border-box;
+/* Làm đẹp các tab */
+.nav-tabs .nav-link {
+    color: #6c757d; /* Màu chữ mặc định */
+    background-color: #f8f9fa; /* Nền mặc định */
+    border-radius: 20px; /* Làm tròn góc cạnh */
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển mượt */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+.nav-tabs .nav-link:hover {
+    color: #ffb141; /* Màu khi hover */
+    background-color: #e2e6ea; /* Nền khi hover */
 }
 
-header {
-    color: #35424a;
-    background: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-form {
-    padding: 20px;
-}
-
-#news-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 140px;
-    row-gap: 30px;
-}
-
-.news-item {
-    background: #ffffff;
-    padding: 15px;
-    height: auto;
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-img{
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-}
-
-input{
-    border-radius: 50px;
-    height: 35px;
-    background-color: rgb(228, 125, 56);
-    border: 1px;
-    cursor: pointer;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-
+.nav-tabs .nav-link.active {
+    color: #fff; /* Màu chữ khi chọn */
+    background-color: #ffb141; /* Màu nền khi chọn */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ cho nổi bật */
 }
