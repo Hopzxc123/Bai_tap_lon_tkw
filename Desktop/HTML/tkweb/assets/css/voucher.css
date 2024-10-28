@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+.promo-container {
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 70px 20px; 
+    max-height: 80vh; /* Chiều cao tối đa */
+    overflow-y: auto; /* Cho phép cuộn khi cần */ 
+}
+/* Ẩn thanh cuộn trên trình duyệt WebKit */
+.promo-container::-webkit-scrollbar {
+    width: 8px; /* Đặt kích thước thanh cuộn nhỏ để ít gây chú ý */
+}
+
+.promo-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1); /* Làm thanh cuộn mờ và ít nổi bật */
+    border-radius: 10px;
+}
+
+.promo-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Đặt track thanh cuộn trong suốt */
+}
+.promo-title {
+    margin-bottom: 10px; /* Khoảng cách dưới thẻ div */
+}
+.promo-container h2 {
+    font-size: 18px;
+    color: #ff8c00;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.promo-container h6 {
+    font-size: 14px;
+    background-color: #66666658;
+    color: #333;
+    margin: 5px 0; /* Khoảng cách trên và dưới */
+    padding: 10px;
+    margin: 0 -20px 0px -20px; /* Đẩy hình ảnh chạm vào hai cạnh */
+    overflow: hidden;
+}
+.promo-item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho hình ảnh */
+}
+.promo-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho hình ảnh */
+    border-bottom: 1px dotted #0c0202; /* Đặt màu và kích thước đường viền */
+}
+.promo-details {
+    font-size: 14px;
+    color: #333;
+    border-left: 2px dotted rgba(0, 0, 0, 0.3);
+}
+.promo-details p {
+    padding: 0 0 0 38px;
+    margin: 10px 0 10px 0;
+    
+}
+.promo-button {
+    font-size: 16px;
+    color: #ff8c00;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0 0 0 38px;
+    text-decoration: none; 
+}
+.promo-code-container {
+    margin: 20px 0 20px 0;
+    display: flex; /* Sử dụng flexbox để căn chỉnh hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.promo-code-container input[type="text"] {
+    flex: 1; /* Để trường nhập liệu chiếm không gian còn lại */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px; /* Khoảng cách giữa trường nhập và nút */
+}
+.promo-code-container button {
+    padding: 10px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.promo-code-container button:hover {
+    background-color: #e67e22;
+}
