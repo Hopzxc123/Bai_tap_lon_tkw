@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: rgb(239, 237, 237);
+}
+
+/*-----------------------------------------* ảnh lướt lướt --------------------------------------------------------*/
+.slider {
+  width: 100vw;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+}
+
+.list img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(220, 213, 213, 0.76);
+  color: white;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+.button button:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.dot {
+  position: absolute;
+  bottom: -5px;
+  color: white;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dot li {
+  list-style: none;
+  width: 50px;
+  height: 2px;
+  background-color: orange;
+  margin: 20px;
+  border-radius: 20px;
+  opacity: 20%;
+}
+
+.dot li:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.dot li.active {
+  opacity: 50%;
+}
+
+/*-----------------------------------------* dưới ảnh --------------------------------------------------------*/
+.under_slide {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(239, 237, 237);
+}
+
+.under_slide li a {
+  text-decoration: none;
+}
+
+.under_slide li a .inner_under {
+  display: flex;
+  flex-direction: column;
+  margin: 35px;
+  height: auto;
+  width: 80px;
+}
+
+.under_slide li a .inner_under img {
+  height: auto;
+  width: 80px;
+}
+
+.under_slide li a .inner_under p {
+  font-size: 12px;
+  text-align: center;
+  color: orange;
+  font-weight: 500;
+}
+
+/*-----------------------------------------* menu --------------------------------------------------------*/
+.d-flex {
+  display: flex;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.w-h-100-50 {
+  height: 50%;
+  width: 100%;
+}
+
+.w-h-100 {
+  height: 100%;
+  width: 100%;
+}
+
+.container-menu {
+  width: 100vw;
+  padding: 0px 150px;
+  margin-bottom: 20px;
+}
+
+.container-menu .menu {
+  flex-wrap: wrap;
+}
+
+.container-menu .menu .item {
+  width: calc(16.66667% - 20px);
+  box-shadow: 1px 1px 3px 0 gray;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.container-menu .menu .item .box-item {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.container-menu .menu .item .box-item img {
+  border-radius: 20px;
+}
+
+.container-menu .menu .item .box-item .price-and-order {
+  justify-content: space-between;
+}
+
+.container-menu .menu .item .box-item .price-and-order .price {
+  width: 50%;
+}
+
+.container-menu .menu .item .box-item .price-and-order .order {
+  width: 50%;
+  padding: 10px 0;
+}
+
+button {
+  float: right;
+  padding: 7px 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: lightgray;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+/*-----------------------------------------* chân trang (footer) --------------------------------------------------------*/
+footer {
+  width: 100vw;
+  color: white;
+}
+
+footer .foot1 {
+  background-image: url(/assets/image/order/foot1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  width: 100%;
+}
+
+footer .foot1 .in_foot1 {
+  margin: 0 70px;
+  padding: 0 30px;
+}
+
+footer .foot1 .in_foot1 .in_in_foot1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .foot1 .in_foot1 .in_in_foot1 .logo {
+  width: 20%;
+  height: auto;
+  padding: 0 20px;
+}
+
+footer .foot1 .in_foot1 .in_in_foot1 .list_foot {
+  width: 50%;
+  padding: 0 20px;
+  float: right;
+  display: flex;
+  align-items: end;
+}
+
+footer .foot1 .in_foot1 .in_in_foot1 .list_foot ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  float: right;
+}
+
+footer .foot1 .in_foot1 .in_in_foot1 .list_foot ul li i {
+  font-size: 20px;
+}
+footer .foot2 {
+  background-color: black;
+  padding: 50px 0;
+  width: 100%;
+}
+
+footer .foot2 .in_foot2 {
+  margin: 0 70px;
+  padding: 0 30px;
+}
+
+footer .foot2 .in_foot2 .in_in_foot2 {
+  display: flex;
+}
+
+footer .foot2 .in_foot2 .in_in_foot2 .content {
+  font-size: 13px;
+  width: 80%;
+  line-height: 7px;
+}
+
+footer .foot2 .in_foot2 .in_in_foot2 .logo {
+  width: 20%;
+  padding-top: 40px;
+}
+
+.clear {
+  clear: both;
+}
+
+@media screen and (max-width: 1260px) {
+  .slider {
+    height: 450px;
+  }
+
+  .container-menu {
+    width: 100vw;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+  }
+
+  .container-menu .menu .item {
+    width: calc(20% - 20px);
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .slider {
+    height: 400px;
+  }
+
+  .container-menu {
+    width: 100vw;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+  }
+
+  .container-menu .menu .item {
+    width: calc(25% - 20px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .slider {
+    height: 300px;
+  }
+
+  .container-menu {
+    width: 100vw;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-menu .menu .item {
+    width: calc(50% - 20px);
+  }
+
+  .container-menu .menu .item .box-item {
+    flex-direction: row;
+  }
+
+  .box-item-2 {
+    padding-left: 10px;
+  }
+
+  .box-item-2 .price-and-order {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .slider {
+    height: 200px;
+  }
+
+  .container-menu .menu .item {
+    width: 100%;
+  }
+
+  .box-item-2 .price-and-order {
+    margin-top: 120px;
+  }
+}
