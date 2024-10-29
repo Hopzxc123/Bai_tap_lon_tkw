@@ -502,7 +502,7 @@ footer .foot2 .in_foot2 .in_in_foot2 .logo {
 
     .under_slide li a .inner_under {
         height: auto;
-        width: 50px;
+        width: 35px;
         margin: 10px;
     }
 
@@ -512,7 +512,7 @@ footer .foot2 .in_foot2 .in_in_foot2 .logo {
 
     .under_slide li a .inner_under img {
         height: auto;
-        width: 50px;
+        width: 35px;
     }
 
     .container-menu .menu .item {
@@ -561,5 +561,16 @@ footer .foot2 .in_foot2 .in_in_foot2 .logo {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    footer .foot2 .in_foot2 .in_in_foot2 .content p {
+        font-size: 10px;
+        line-height:15px;
+    }
+    footer .foot2 .in_foot2 .in_in_foot2 .logo {
+        margin-left: 20px;
+    }
+    footer .foot2 .in_foot2 .in_in_foot2 .logo img{
+        height: 30px;
+        width: 80px;
     }
 }
