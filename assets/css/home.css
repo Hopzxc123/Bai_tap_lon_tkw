@@ -19,7 +19,7 @@ ul {
 }
 
 .banner-item a img {
-  width: 100vw;
+  width: 100%;
 }
 
 .contaier {
@@ -48,10 +48,11 @@ ul {
 
 .list-tab-item {
   margin: 0 auto;
-  width: 1400px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 50px;
 }
 
 .tab-item {
@@ -91,7 +92,7 @@ ul {
 
 .container-list-menu{
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
 }
 
 .container-list-menu .title{
@@ -161,7 +162,8 @@ ul {
 
 .list-news-item {
   margin: 0 auto;
-  width: 1400px;
+  padding: 0 100px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
