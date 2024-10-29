@@ -1,3 +1,9 @@
+function toggleApplyButton() {
+    const promoCodeInput = document.getElementById('promoCode').value.trim();
+    const applyButton = document.getElementById('applyButton');
+    // Bật hoặc tắt nút dựa trên nội dung của ô nhập
+    applyButton.disabled = promoCodeInput === '';
+}
 function applyPromoCode() {
     const promoCodeInput = document.getElementById('promoCode').value.trim();
 

@@ -31,7 +31,9 @@
             padding: 20px; /* Thêm padding */
             margin-right: 20px;
         }
-
+        .cart-container .address-form span{
+            font-size: 12px;
+        }
         .address-form label {
             font-size: 14px;
             color: #333;

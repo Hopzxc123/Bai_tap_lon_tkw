@@ -41,6 +41,10 @@ body {
     padding-bottom: 10px;
     border-bottom: 1px solid #f3f3f3;
 }
+.promo-container .promo-code-container button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
 .promo-container h6 {
     font-size: 14px;
     background-color: #66666658;
@@ -108,3 +112,4 @@ body {
 .promo-code-container button:hover {
     background-color: #e67e22;
 }
+ /* CSS để tối màu nút khi bị vô hiệu hóa */
