@@ -110,7 +110,7 @@ body {
 
 .container-menu .menu .item .box-item .content p {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -139,11 +139,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-/* .price-and-order .add:hover {
-    background-color: orange;
-} */
-
 /*-----------------------------------------* chân trang (footer) --------------------------------------------------------*/
 footer {
     width: 100%;
@@ -159,7 +154,7 @@ footer .foot1 {
 }
 
 footer .foot1 .in_foot1 {
-    margin: 0 55px;
+    margin: 0 65px;
     padding: 0 30px;
 }
 
@@ -176,7 +171,7 @@ footer .foot1 .in_foot1 .in_in_foot1 .logo {
 
 footer .foot1 .in_foot1 .in_in_foot1 .logo img {
     height: 80px;
-    width: 100px;
+    width: 110px;
 }
 
 footer .foot1 .in_foot1 .in_in_foot1 .list_foot {
@@ -201,6 +196,7 @@ footer .foot1 .in_foot1 .in_in_foot1 .list_foot ul {
 
 footer .foot1 .in_foot1 .in_in_foot1 .list_foot ul li i {
     font-size: 30px;
+    color: white;
 }
 
 footer .foot2 {
@@ -211,7 +207,7 @@ footer .foot2 {
 
 footer .foot2 .in_foot2 {
     margin: 0 70px;
-    padding: 0 30px;
+    padding: 0 45px;
 }
 
 footer .foot2 .in_foot2 .in_in_foot2 {
@@ -233,8 +229,6 @@ footer .foot2 .in_foot2 .in_in_foot2 .logo {
 }
 
 /*-----------------------------------------* respon --------------------------------------------------------*/
-
-
 @media screen and (max-width: 1450px) {
     .slider {
         height: max-content;
@@ -314,9 +308,11 @@ footer .foot2 .in_foot2 .in_in_foot2 .logo {
     .container-menu .menu .item .box-item {
         display: flex;
     }
+
     .container-menu .menu .item .box-item .content {
         height: 70px;
     }
+
     .container-menu .menu .item .box-item .box-item-1 img {
         height: 130px;
         width: 130px;
@@ -379,12 +375,12 @@ footer .foot2 .in_foot2 .in_in_foot2 .logo {
     }
 
     footer .foot2 .in_foot2 {
-        margin: 0 35px;
+        margin: 0 30px;
     }
 
     footer .foot2 .in_foot2 .in_in_foot2 .content p {
         font-size: 13px;
-        /* line-height: 20px; */
+        line-height: 12px;
     }
 
     footer .foot2 .in_foot2 .in_in_foot2 .logo img {
@@ -654,3 +650,5 @@ footer .foot2 .in_foot2 .in_in_foot2 .logo {
         width: 80px;
     }
 }
+
+/*-----------------------------------------* respon --------------------------------------------------------*/
