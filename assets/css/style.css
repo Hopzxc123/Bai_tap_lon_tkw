@@ -12,20 +12,14 @@
     width: 50%;
   }
 }
-.login-button {
-  background-color: #fff;
-  color: #000;
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s background-color;
+.login-button img {
+  vertical-align: middle;
+  width: 40px;
+  margin-bottom: 7px;
 }
-
-.login-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: 0.3s background-color;
-  color: #000;
+.login-cart img {
+  width: 70px;
+  vertical-align: middle;
 }
 .navbar-toggler {
   border: none;
@@ -68,7 +62,7 @@
 }
 
 #carouselExampleDark {
-  margin-top: 80px;
+  margin-top: 55px;
 }
 /* noi dung  */
 .card {

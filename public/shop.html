@@ -1,774 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Coffee House</title>
-    <!-- favicon -->
-    <link
-      href="/assets/image/logo/favicon_new.ico"
-      rel="icon"
-      type="image/x-icon"
-    />
-    <!-- favicon -->
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <!-- bootstrap css -->
-    <!-- custom css -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- custom css -->
-    <!-- bootstrap js -->
-    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
-    <!-- bootstrap js -->
-    <!-- fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- fonts link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    />
-    <!-- this is icons link -->
-  </head>
-  <body>
-    <div class="all-content">
-      <!-- Navbar header -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="/public/home.html"
-            ><img
-              src="/assets/image/logo/logo.svg"
-              class="img-fluid"
-              alt="Logo"
-          /></a>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Cà phê hạt rang </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Cửa hàng </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Khuyến mãi</a>
-                </li>
-              </ul>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Coffee House</title>
+  <!-- favicon -->
+  <link href="/assets/image/logo/favicon_new.ico" rel="icon" type="image/x-icon" />
+  <!-- favicon -->
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <!-- bootstrap css -->
+  <!-- custom css -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- custom css -->
+  <!-- bootstrap js -->
+  <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
+  <!-- bootstrap js -->
+  <!-- fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- fonts link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  />
+  <!-- this is icons link -->
+</head>
+
+<body>
+  <div class="all-content">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="/public/home.html"><img src="/assets/image/logo/logo.svg"
+            class="img-fluid" alt="Logo" /></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <a href="#" class="login-button">Login</a>
-          <button
-            class="navbar-toggler pe-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
-      <!-- end navbar  -->
-      <!-- slide show -->
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img
-              src="/assets/image/banner/banner.jpg"
-              class="d-block w-100"
-              alt=""
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="/assets/image/banner/banner_2.jpg"
-              class="d-block w-100"
-              alt=""
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/image/banner/banner_3.jpg"
-              class="d-block w-100"
-              alt=""
-            />
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cà phê hạt rang </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Cửa hàng </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Khuyến mãi</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <a href="#" class="login-button">
+          <img src="/assets/image/logo/Login.70dc3d8.png" alt="" /></a>
+        <a href="#" class="login-cart">
+          <img src="/assets/image/logo/Carticon.373916c.png" alt="" /></a>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <!-- end slide show -->
-      <!-- content start -->
-      <div class="container-tabs container-fluid container-lg">
-        <div class="card-title m-5">
-          <h2 class="text-center py-4">Hệ thống cửa hàng The Coffee House</h2>
+    </nav>
+    <!-- end navbar  -->
+    <!-- slide show -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="/assets/image/banner/banner.jpg" class="d-block w-100" alt="" />
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div>
-              <ul class="nav nav-tabs justify-content-center mb-3">
-                <li class="nav-item nav__store">
-                  <a class="nav-link active" href="#haNoi" data-bs-toggle="tab"
-                    >Hà Nội</a
-                  >
-                </li>
-                <li class="nav-item nav__store">
-                  <a class="nav-link" href="#HCM" data-bs-toggle="tab"
-                    >Hồ Chí Minh</a
-                  >
-                </li>
-                <li class="nav-item nav__store">
-                  <a class="nav-link" href="#HP" data-bs-toggle="tab"
-                    >Hải Phòng</a
-                  >
-                </li>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/assets/image/banner/banner_2.jpg" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/image/banner/banner_3.jpg" class="d-block w-100" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end slide show -->
+    <!-- content start -->
+    <div class="container-tabs container-fluid container-lg">
+      <div class="card-title m-5">
+        <h2 class="text-center py-4">Hệ thống cửa hàng The Coffee House</h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <ul class="nav nav-tabs justify-content-center mb-3">
+              <li class="nav-item nav__store">
+                <a class="nav-link active" href="#haNoi" data-bs-toggle="tab">Hà Nội</a>
+              </li>
+              <li class="nav-item nav__store">
+                <a class="nav-link" href="#HCM" data-bs-toggle="tab">Hồ Chí Minh</a>
+              </li>
+              <li class="nav-item nav__store">
+                <a class="nav-link" href="#HP" data-bs-toggle="tab">Hải Phòng</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <!-- start tab-content -->
+              <div id="haNoi" class="active tab-pane fade in show">
+                <div class="hn-title col-12 my-4">
+                  <h5 class="d-block">Tìm thấy 12 cửa hàng</h5>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/card-img.jpg" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Nguyễn Khánh Toàn</strong>
+                          </small>
+                          <p class="card-text">
+                            160 Nguyễn Khánh Toàn, Cầu Giấy, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn1.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Trung Hoà</strong>
+                          </small>
+                          <p class="card-text">
+                            3 Trung Hòa, Cầu Giấy, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn2.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Hồ Tùng Mậu</strong>
+                          </small>
+                          <p class="card-text">
+                            2 Hồ Tùng Mậu, Cầu Giấy, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn4.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Times City</strong>
+                          </small>
+                          <p class="card-text">
+                            458 Minh Khai, Hai Bà Trưng, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn5.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Trần Nguyên Đán</strong>
+                          </small>
+                          <p class="card-text">
+                            72 Trần Nguyên Đán, Hoàng Mai, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn6.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Rice City</strong>
+                          </small>
+                          <p class="card-text">
+                            Rice City Linh Đàm, Hoàng Mai, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn7.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Hào Nam</strong>
+                          </small>
+                          <p class="card-text">
+                            30 Hào Nam, Đống Đa, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn8.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Xuân La </strong>
+                          </small>
+                          <p class="card-text">
+                            40 Xuân La, Tây Hồ, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn9.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Discovery</strong>
+                          </small>
+                          <p class="card-text">
+                            Discovery Complex 302 Cầu Giấy, Cầu Giấy, Hà Nội,
+                            Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn10.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Thái Hà</strong>
+                          </small>
+                          <p class="card-text">
+                            1 Thái Hà, Đống Đa, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn11.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Hai Bà Trưng</strong>
+                          </small>
+                          <p class="card-text">
+                            23M Hai Bà Trưng, Hoàn Kiếm, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hn3.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HN Văn Phú</strong>
+                          </small>
+                          <p class="card-text">
+                            Chung cư Victoria Văn phú Tòa V2 Khu đô thị Văn
+                            Phú, Hà Đông, Hà Nội, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="HCM" class="tab-pane fade">
+                <div class="hn-title col-12 my-4">
+                  <h5 class="d-block">Tìm thấy 15 cửa hàng</h5>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm1.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Trung Sơn</strong>
+                          </small>
+                          <p class="card-text">
+                            114 Đường 9A Khu Dân cư Trung Sơn, Huyện Bình
+                            Chánh, Hồ Chí Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm2.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Nguyễn Ảnh Thủ</strong>
+                          </small>
+                          <p class="card-text">
+                            93/5 Nguyễn Ảnh Thủ, Huyện Hóc Môn, Hồ Chí Minh,
+                            Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm3.png " alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Nguyễn Thái Bình</strong>
+                          </small>
+                          <p class="card-text">
+                            141 Nguyễn Thái Bình, Quận 1, Hồ Chí Minh, Việt
+                            Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm4.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Ba Tháng Hai</strong>
+                          </small>
+                          <p class="card-text">
+                            572 Ba Tháng Hai, Quận 10, Hồ Chí Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm5.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Sư Vạn Hạnh</strong>
+                          </small>
+                          <p class="card-text">
+                            798 Sư Vạn Hạnh, Quận 10, Hồ Chí Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm6.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Cư Xá Bình Thới</strong>
+                          </small>
+                          <p class="card-text">
+                            45 Đường Số 5 - Cư xá Bình Thới, Quận 11, Hồ Chí
+                            Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm7.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Xuân Thuỷ</strong>
+                          </small>
+                          <p class="card-text">
+                            57 Xuân Thủy, Quận 2, Hồ Chí Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm8.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Đường 41</strong>
+                          </small>
+                          <p class="card-text">
+                            35-37 Đuờng 41, Quận 4, Hồ Chí Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm9.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong> HCM Đường 22</strong>
+                          </small>
+                          <p class="card-text">
+                            19 - 21 Đường 22, Quận Bình Tân, Hồ Chí Minh, Việt
+                            Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm10.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Điện Biên Phủ</strong>
+                          </small>
+                          <p class="card-text">
+                            HCM 469 Điện Biên Phủ, Quận Bình Thạnh, Hồ Chí
+                            Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm11.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Ngô Tất Tố</strong>
+                          </small>
+                          <p class="card-text">
+                            14 Ngô Tất Tố, Quận Bình Thạnh, Hồ Chí Minh, Việt
+                            Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm12.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Thống Nhất</strong>
+                          </small>
+                          <p class="card-text">
+                            355 Thống Nhất, Quận Gò Vấp, Hồ Chí Minh, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm13.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Phan Huy Ích</strong>
+                          </small>
+                          <p class="card-text">
+                            403 Phan Huy Ích, Quận Gò Vấp, Hồ Chí Minh, Việt
+                            Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm14.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Nguyễn Văn Lượng</strong>
+                          </small>
+                          <p class="card-text">
+                            258 Nguyễn Văn Lượng, Quận Gò Vấp, Hồ Chí Minh,
+                            Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hcm15.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HCM Phan Văn Trị</strong>
+                          </small>
+                          <p class="card-text">
+                            771 Phan Văn Trị, Quận Gò Vấp, Hồ Chí Minh, Việt
+                            Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="HP" class="tab-pane fade mx-auto">
+                <div class="hn-title col-12 my-4">
+                  <h5 class="d-block">Tìm thấy 3 cửa hàng</h5>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hp1.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HP Trần Phú</strong>
+                          </small>
+                          <p class="card-text">
+                            15 Trần Phú, Ngô Quyền, Hải Phòng, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hp2.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HP Cat Bi Plaza</strong>
+                          </small>
+                          <p class="card-text">
+                            Số 1 Lê Hồng Phong, Ngô Quyền, Hải Phòng, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
+                    <div class="card p-3">
+                      <img src="/assets/image/cua_hang/hp3.png" alt="" />
+                      <div class="card-body">
+                        <div class="text-section">
+                          <small class="card-title">
+                            THE COFFEE HOUSE -
+                            <strong>HP Aeon Mall Lê Chân</strong>
+                          </small>
+                          <p class="card-text">
+                            Lô số T109, Tầng Một TTTM Aeonmall Hải Phòng Lê
+                            Chân, Đường Hồ Sen – Cầu Rào 2, Quận Lê Chân, Hải
+                            Phòng, Việt Nam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end tab-content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer start -->
+  <footer class="mt-4">
+    <div class="row">
+      <div class="foot1 col-lg-4 col-md-8 col-sm-12">
+        <div class="in_foot1">
+          <div class="in_in_foot1">
+            <div class="logo">
+              <img src="/assets/image/logo/logocafe_footer.png" />
+            </div>
+            <div class="list_foot col-lg-6 col-md-10 col-sm-12">
+              <ul>
+                <li><i class="fa-brands fa-facebook fs-2"></i></li>
+                <li><i class="fa-brands fa-youtube fs-2"></i></li>
+                <li><i class="fa-brands fa-instagram fs-2"></i></li>
               </ul>
-              <div class="tab-content">
-                <!-- start tab-content -->
-                <div id="haNoi" class="active tab-pane fade in show">
-                  <div class="hn-title col-12 my-4">
-                    <h5 class="d-block">Tìm thấy 12 cửa hàng</h5>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/card-img.jpg" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Nguyễn Khánh Toàn</strong>
-                            </small>
-                            <p class="card-text">
-                              160 Nguyễn Khánh Toàn, Cầu Giấy, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn1.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Trung Hoà</strong>
-                            </small>
-                            <p class="card-text">
-                              3 Trung Hòa, Cầu Giấy, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn2.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Hồ Tùng Mậu</strong>
-                            </small>
-                            <p class="card-text">
-                              2 Hồ Tùng Mậu, Cầu Giấy, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn4.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Times City</strong>
-                            </small>
-                            <p class="card-text">
-                              458 Minh Khai, Hai Bà Trưng, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn5.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Trần Nguyên Đán</strong>
-                            </small>
-                            <p class="card-text">
-                              72 Trần Nguyên Đán, Hoàng Mai, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn6.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Rice City</strong>
-                            </small>
-                            <p class="card-text">
-                              Rice City Linh Đàm, Hoàng Mai, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn7.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Hào Nam</strong>
-                            </small>
-                            <p class="card-text">
-                              30 Hào Nam, Đống Đa, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn8.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Xuân La </strong>
-                            </small>
-                            <p class="card-text">
-                              40 Xuân La, Tây Hồ, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn9.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Discovery</strong>
-                            </small>
-                            <p class="card-text">
-                              Discovery Complex 302 Cầu Giấy, Cầu Giấy, Hà Nội,
-                              Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn10.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Thái Hà</strong>
-                            </small>
-                            <p class="card-text">
-                              1 Thái Hà, Đống Đa, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn11.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Hai Bà Trưng</strong>
-                            </small>
-                            <p class="card-text">
-                              23M Hai Bà Trưng, Hoàn Kiếm, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn3.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HN Văn Phú</strong>
-                            </small>
-                            <p class="card-text">
-                              Chung cư Victoria Văn phú Tòa V2 Khu đô thị Văn
-                              Phú, Hà Đông, Hà Nội, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="HCM" class="tab-pane fade">
-                  <div class="hn-title col-12 my-4">
-                    <h5 class="d-block">Tìm thấy 15 cửa hàng</h5>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm1.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Trung Sơn</strong>
-                            </small>
-                            <p class="card-text">
-                              114 Đường 9A Khu Dân cư Trung Sơn, Huyện Bình
-                              Chánh, Hồ Chí Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm2.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Nguyễn Ảnh Thủ</strong>
-                            </small>
-                            <p class="card-text">
-                              93/5 Nguyễn Ảnh Thủ, Huyện Hóc Môn, Hồ Chí Minh,
-                              Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm3.png " alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Nguyễn Thái Bình</strong>
-                            </small>
-                            <p class="card-text">
-                              141 Nguyễn Thái Bình, Quận 1, Hồ Chí Minh, Việt
-                              Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm4.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Ba Tháng Hai</strong>
-                            </small>
-                            <p class="card-text">
-                              572 Ba Tháng Hai, Quận 10, Hồ Chí Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm5.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Sư Vạn Hạnh</strong>
-                            </small>
-                            <p class="card-text">
-                              798 Sư Vạn Hạnh, Quận 10, Hồ Chí Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm6.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Cư Xá Bình Thới</strong>
-                            </small>
-                            <p class="card-text">
-                              45 Đường Số 5 - Cư xá Bình Thới, Quận 11, Hồ Chí
-                              Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm7.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Xuân Thuỷ</strong>
-                            </small>
-                            <p class="card-text">
-                              57 Xuân Thủy, Quận 2, Hồ Chí Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm8.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Đường 41</strong>
-                            </small>
-                            <p class="card-text">
-                              35-37 Đuờng 41, Quận 4, Hồ Chí Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm9.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong> HCM Đường 22</strong>
-                            </small>
-                            <p class="card-text">
-                              19 - 21 Đường 22, Quận Bình Tân, Hồ Chí Minh, Việt
-                              Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm10.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Điện Biên Phủ</strong>
-                            </small>
-                            <p class="card-text">
-                              HCM 469 Điện Biên Phủ, Quận Bình Thạnh, Hồ Chí
-                              Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm11.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Ngô Tất Tố</strong>
-                            </small>
-                            <p class="card-text">
-                              14 Ngô Tất Tố, Quận Bình Thạnh, Hồ Chí Minh, Việt
-                              Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm12.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Thống Nhất</strong>
-                            </small>
-                            <p class="card-text">
-                              355 Thống Nhất, Quận Gò Vấp, Hồ Chí Minh, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm13.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Phan Huy Ích</strong>
-                            </small>
-                            <p class="card-text">
-                              403 Phan Huy Ích, Quận Gò Vấp, Hồ Chí Minh, Việt
-                              Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm14.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Nguyễn Văn Lượng</strong>
-                            </small>
-                            <p class="card-text">
-                              258 Nguyễn Văn Lượng, Quận Gò Vấp, Hồ Chí Minh,
-                              Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm15.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HCM Phan Văn Trị</strong>
-                            </small>
-                            <p class="card-text">
-                              771 Phan Văn Trị, Quận Gò Vấp, Hồ Chí Minh, Việt
-                              Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="HP" class="tab-pane fade mx-auto">
-                  <div class="hn-title col-12 my-4">
-                    <h5 class="d-block">Tìm thấy 3 cửa hàng</h5>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hp1.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HP Trần Phú</strong>
-                            </small>
-                            <p class="card-text">
-                              15 Trần Phú, Ngô Quyền, Hải Phòng, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hp2.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HP Cat Bi Plaza</strong>
-                            </small>
-                            <p class="card-text">
-                              Số 1 Lê Hồng Phong, Ngô Quyền, Hải Phòng, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
-                      <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hp3.png" alt="" />
-                        <div class="card-body">
-                          <div class="text-section">
-                            <small class="card-title">
-                              THE COFFEE HOUSE -
-                              <strong>HP Aeon Mall Lê Chân</strong>
-                            </small>
-                            <p class="card-text">
-                              Lô số T109, Tầng Một TTTM Aeonmall Hải Phòng Lê
-                              Chân, Đường Hồ Sen – Cầu Rào 2, Quận Lê Chân, Hải
-                              Phòng, Việt Nam
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end tab-content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot2">
+      <div class="in_foot2">
+        <div class="in_in_foot2">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-8 col-12 mb-3 mb-md-0">
+              <div class="content">
+                <p class="text-wrap">
+                  Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
+                </p>
+                <p class="text-wrap">
+                  Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp
+                  ngày 23/07/2014
+                </p>
+                <p class="text-wrap">Người đại diện: NGÔ NGUYÊN KHA</p>
+                <p class="text-wrap">
+                  Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh
+                </p>
+                <p class="text-wrap">
+                  Điện thoại: (028) 7107 8079 Email: hi@thecoffeehouse.vn
+                </p>
+                <p class="text-wrap">
+                  © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
+                  mọi quyền bảo lưu
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 text-center text-md-end">
+              <div class="logo">
+                <img src="/assets/image/logo/logo_footer.png" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- footer start -->
-    <footer class="mt-4">
-      <div class="row">
-        <div class="foot1 col-lg-4 col-md-8 col-sm-12">
-          <div class="in_foot1">
-            <div class="in_in_foot1">
-              <div class="logo">
-                <img src="/assets/image/logo/logocafe_footer.png" />
-              </div>
-              <div class="list_foot col-lg-6 col-md-10 col-sm-12">
-                <ul>
-                  <li><i class="fa-brands fa-facebook fs-2"></i></li>
-                  <li><i class="fa-brands fa-youtube fs-2"></i></li>
-                  <li><i class="fa-brands fa-instagram fs-2"></i></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  </footer>
+</body>
 
-      <div class="foot2">
-        <div class="in_foot2">
-          <div class="in_in_foot2">
-            <div class="row align-items-center">
-              <div class="col-lg-8 col-md-8 col-12 mb-3 mb-md-0">
-                <div class="content">
-                  <p class="text-wrap">
-                    Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
-                  </p>
-                  <p class="text-wrap">
-                    Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp
-                    ngày 23/07/2014
-                  </p>
-                  <p class="text-wrap">Người đại diện: NGÔ NGUYÊN KHA</p>
-                  <p class="text-wrap">
-                    Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh
-                  </p>
-                  <p class="text-wrap">
-                    Điện thoại: (028) 7107 8079 Email: hi@thecoffeehouse.vn
-                  </p>
-                  <p class="text-wrap">
-                    © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
-                    mọi quyền bảo lưu
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-12 text-center text-md-end">
-                <div class="logo">
-                  <img src="/assets/image/logo/logo_footer.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
