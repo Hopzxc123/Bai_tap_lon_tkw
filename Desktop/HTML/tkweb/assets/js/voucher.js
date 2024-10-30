@@ -19,11 +19,18 @@ function applyPromoCode() {
         alert('Mã khuyến mãi đã được áp dụng!');
     } else {
         alert('Mã khuyến mãi không hợp lệ!');
-    }
+    } 
 }
-
-function isValidPromoCode(code) {
+//có thể bỏ
+function isValidPromoCode(code) {    
     // Danh sách mã khuyến mãi hợp lệ (bạn có thể tùy chỉnh)
     const validCodes = ['HOPDEPTRAI', 'HIENTHUBA'];
     return validCodes.includes(code); // Kiểm tra mã khuyến mãi có nằm trong danh sách hợp lệ không
 }
+document.getElementById('useVoucherButton').addEventListener('click', function() {
+    // Lưu giá trị giảm giá vào localStorage
+    localStorage.setItem('discount', 20); // Ví dụ: giảm giá 20%
+
+    // Chuyển về giohang.html
+    window.location.href = 'giohang.html';
+});

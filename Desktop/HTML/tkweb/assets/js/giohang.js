@@ -144,11 +144,14 @@ let cartItems = [];
                 if (cartItems.length === 0) {
                     alert('Giỏ hàng của bạn hiện không có sản phẩm nào. Vui lòng thêm sản phẩm trước khi đặt hàng.');
                     return;
-                }
-        
+                }   
                 alert('Đặt hàng thành công!');
                 // Thực hiện các thao tác đặt hàng ở đây
                 checkFormCompletion();
             }
         }
+        document.getElementById('promoButton').addEventListener('click', function() {
+            window.location.href = 'voucher.html'; // Chuyển sang trang voucher.html
+        });
+    
         
