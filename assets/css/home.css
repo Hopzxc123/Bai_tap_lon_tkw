@@ -49,8 +49,8 @@ ul {
 .list-tab-item {
   margin: 0 auto;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   justify-content: center;
 
 }
