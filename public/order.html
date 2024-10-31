@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
     <!-- hearder -->
-    <link href="/assets/image/logo/favicon_new.ico" rel="icon" type="image/x-icon"/> <!--icon-->
+    <link href="/assets/image/logo/favicon_new.ico" rel="icon" type="image/x-icon" /> <!--icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /><!--icon footer-->
@@ -21,39 +21,40 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand me-auto" href="/public/home.html"><img src="/assets/image/logo/logo.svg"
-                  class="img-fluid" alt="Logo" /></a>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <a class="navbar-brand me-auto" href="/public/home.html"><img src="/assets/image/logo/logo.svg"
+                        class="img-fluid" alt="Logo" /></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="order.html">Cà phê hạt rang </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="Tintuc.html">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="shop.html">Cửa hàng </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">Khuyến mãi</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="#">Cà phê hạt rang </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="#">Tin tức</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="#">Cửa hàng </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="#">Khuyến mãi</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <a href="#" class="login-button">
-                <img src="/assets/image/logo/Login.70dc3d8.png" alt="" /></a>
-              <a href="#" class="login-cart">
-                <img src="/assets/image/logo/Carticon.373916c.png" alt="" /></a>
-              <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <a href="#" class="login-button">
+                    <img src="/assets/image/logo/Login.70dc3d8.png" alt="" /></a>
+                <a href="#" class="login-cart">
+                    <img src="/assets/image/logo/Carticon.373916c.png" alt="" /></a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <!-- slide show -->
@@ -79,245 +80,276 @@
             </div>
         </div>
         <!-- end slide show -->
-        <ul class="under_slide">
-            <li><a href="../public/order.html">
+        <!--tab-->
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#menu" data-bs-toggle="tab">
                     <div class="inner_under">
                         <div class="icon"><img src="../assets/image/order/li1.png" alt=""></div>
                         <div class="content">
                             <p>Signature CPG Coffee</p>
                         </div>
                     </div>
-                </a></li>
-
-            <li><a href="../public/order2.html">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menu2" data-bs-toggle="tab">
                     <div class="inner_under">
                         <div class="icon"><img src="../assets/image/order/li2.png" alt=""></div>
                         <div class="content">
                             <p>Cà phê - Trà đóng gói</p>
                         </div>
                     </div>
-                </a></li>
+                </a>
+            </li>
         </ul>
-        <div class="container-menu">
-            <div class="menu  ">
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper">
-                                    <p>Túi tropical garden 200g</p>
-                                </div>
-                                <div class="price-and-order">
-                                    <p>239.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+        <!--menu-->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="menu">
+                <div class="container-menu">
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper">
+                                        <p>Túi tropical garden 200g</p>
+                                    </div>
+                                    <div class="price-and-order">
+                                        <p>239.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe2.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>TÚI VIETNAM TYPICA 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>199.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe2.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>TÚI VIETNAM TYPICA 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>199.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe3.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>TÚI ETHIOPIA GUJI SHAKISSO 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>289.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe3.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>TÚI ETHIOPIA GUJI SHAKISSO 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>289.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe4.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>TÚI NUT CRACKER 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>199.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe4.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>TÚI NUT CRACKER 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>199.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe5.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>TÚI SIGNATURE PHIN 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>199.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe5.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>TÚI SIGNATURE PHIN 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>199.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe6.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>TÚI CAMPFIRE 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>199.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe6.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>TÚI CAMPFIRE 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>199.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe7.jpg"></div>
-                            <div class="box-item-2 ">
-                                <div class="content upper  ">
-                                    <p>HỘP SIGNATURE PHIN 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>300.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe7.jpg"></div>
+                                <div class="box-item-2 ">
+                                    <div class="content upper  ">
+                                        <p>HỘP SIGNATURE PHIN 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>300.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1"><img src="../assets/image/order/cafe8.jpg"></div>
-                            <div class="box-item-2">
-                                <div class="content upper  ">
-                                    <p>Túi tropical garden 200g</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>350.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1"><img src="../assets/image/order/cafe8.jpg"></div>
+                                <div class="box-item-2">
+                                    <div class="content upper  ">
+                                        <p>Túi tropical garden 200g</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>350.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe9.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>HỘP NUT CRACKER 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>300.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe9.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>HỘP NUT CRACKER 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>300.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe10.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>HỘP CAMPFIRE 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>300.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe10.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>HỘP CAMPFIRE 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>300.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe11.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>HỘP VIETNAM TYPICA 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>300.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe11.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>HỘP VIETNAM TYPICA 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>300.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="item">
-                        <div class="box-item  ">
-                            <div class="box-item-1  "><img src="../assets/image/order/cafe12.jpg"></div>
-                            <div class="box-item-2  ">
-                                <div class="content upper  ">
-                                    <p>HỘP ETHIOPIA GUJI SHAKISSO 200G</p>
-                                </div>
-                                <div class="price-and-order    ">
-                                    <p>390.000đ</p>
-                                    <div class="add">
-                                        <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/cafe12.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper  ">
+                                        <p>HỘP ETHIOPIA GUJI SHAKISSO 200G</p>
+                                    </div>
+                                    <div class="price-and-order    ">
+                                        <p>390.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="menu2">
+                <div class="container-menu">
+                    <a href="">
+                        <div class="item">
+                            <div class="box-item  ">
+                                <div class="box-item-1  "><img src="../assets/image/order/tra.jpg"></div>
+                                <div class="box-item-2  ">
+                                    <div class="content upper">
+                                        <p>Cà Phê Nguyên Hạt Arabica TCH (200gr)</p>
+                                    </div>
+                                    <div class="price-and-order">
+                                        <p>100.000đ</p>
+                                        <div class="add">
+                                            <a href=""><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+        <!--end menu-->
+        <!--end tab-->
     </main>
     <footer>
         <div class="foot1">
@@ -351,7 +383,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="anhdong.js"></script> -->
 </body>
 
 </html>
