@@ -4,6 +4,23 @@ function toggleApplyButton() {
     // Bật hoặc tắt nút dựa trên nội dung của ô nhập
     applyButton.disabled = promoCodeInput === '';
 }
+
+function isValidPromoCode(code) {
+    // Danh sách mã khuyến mãi hợp lệ
+        const validCodes = ['20k', '10%', '39k', '30%', '30k', 'freeship'];
+        return validCodes.includes(code.toLowerCase()); // Chuyển đổi mã thành chữ thường
+    }
+    
+function usePromo(promoCode) {
+    if (isValidPromoCode(promoCode)) {
+        // Chuyển đến giỏ hàng với mã khuyến mãi
+        localStorage.setItem('promoCode', promoCode.toLowerCase()); // Lưu mã khuyến mãi vào Local Storage
+        window.location.href = `giohang.html?promoCode=${promoCode}`;
+    } else {
+        alert('Mã khuyến mãi không hợp lệ.');
+    }
+}
+
 function applyPromoCode() {
     const promoCodeInput = document.getElementById('promoCode').value.trim();
 
@@ -13,24 +30,18 @@ function applyPromoCode() {
         return; // Thoát khỏi hàm nếu không có mã khuyến mãi được nhập
     }
 
-    // Kiểm tra mã khuyến mãi hợp lệ
-    if (isValidPromoCode(promoCodeInput)) {
-        // Logic để áp dụng mã khuyến mãi ở đây
-        alert('Mã khuyến mãi đã được áp dụng!');
-    } else {
-        alert('Mã khuyến mãi không hợp lệ!');
-    } 
+    // Gọi hàm sử dụng mã khuyến mãi
+    usePromo(promoCodeInput);
 }
-//có thể bỏ
-function isValidPromoCode(code) {    
-    // Danh sách mã khuyến mãi hợp lệ (bạn có thể tùy chỉnh)
-    const validCodes = ['HOPDEPTRAI', 'HIENTHUBA'];
-    return validCodes.includes(code); // Kiểm tra mã khuyến mãi có nằm trong danh sách hợp lệ không
-}
-document.getElementById('useVoucherButton').addEventListener('click', function() {
-    // Lưu giá trị giảm giá vào localStorage
-    localStorage.setItem('discount', 20); // Ví dụ: giảm giá 20%
+// Đảm bảo rằng các phần tử DOM đã được tải trước khi thêm sự kiện
+document.addEventListener('DOMContentLoaded', function () {
+    const promoCodeInput = document.getElementById('promoCode');
+    if (promoCodeInput) {
+        promoCodeInput.addEventListener('input', toggleApplyButton);
+    }
 
-    // Chuyển về giohang.html
-    window.location.href = 'giohang.html';
+    const applyButton = document.getElementById('applyButton');
+    if (applyButton) {
+        applyButton.addEventListener('click', applyPromoCode);
+    }
 });
