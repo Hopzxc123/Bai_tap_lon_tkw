@@ -10,8 +10,8 @@ body {
 }
 
 a {
-  color: black;
-  text-decoration: none;
+  color: black !important;
+  text-decoration: none !important;
 }
 
 ul {
@@ -47,26 +47,25 @@ ul {
 }
 
 .list-tab-item {
-  margin: 0 auto;
-  width: 100%;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
   justify-content: center;
+}
 
+.list-tab-item .nav-link.active .image{
+  background-color: rgb(255, 231, 186);
 }
 
 .card-content h5 {
   margin-top: 5px;
+  font-size: 15px;
   color: #b2b2b2;
   text-align: center;
 }
 
 .tab-item .item {
-  margin: 10px 0 20px;
-  width: 100px;
+  width: 90px;
   height: 150px;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .tab-item .item img {
@@ -82,23 +81,15 @@ ul {
   border-radius: 999px;
 }
 
-.tab-item .item .image:hover{
-  background-color: rgb(255, 231, 186);
-}
+
 
 .container-list-menu{
   margin: 0 auto;
-  width: 100%;
-}
-
-.container-list-menu .title{
-  margin: 50px 0 10px 20px;
 }
 
 .list-menu-item {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 100px;
 }
 
 .menu-item .block-item {
@@ -112,7 +103,6 @@ ul {
 }
 
 .menu-item {
-  width: 16.666%;
   margin: 16px 0 0;
   padding:0 10px;
 }
@@ -145,7 +135,9 @@ ul {
 }
 
 .price-item .add {
-  padding: 10px;
+  padding-top: 4px;
+  padding-left: 10px;
+  margin-top: 10px;
   border-radius: 999px;
   width: 36px;
   height: 36px;
@@ -158,20 +150,8 @@ ul {
 
 .list-news-item {
   margin: 0 auto;
-  padding: 0 100px;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.list-menu-item .news-item{
-  position: relative;
-
-}
-
-.list-menu-item .title-news{
-  position: absolute;
-  bottom: 50px;
 }
 
 .newspaper {
@@ -192,35 +172,20 @@ ul {
 }
 
 .news-item{
-  width: 23%;
-  /* padding: 15px; */
-  margin: 0 10px;
-  box-shadow: 10px 10px 30px #e1e1e1;
-  border-radius: 3%;
+  width: 25%;
+  padding: 15px;
 }
 
-.image-news img{
+.news-item img{
   width: 100%;
-  border-radius: 3% 3% 0 0;
-
 }
 
-.title-news{
-  margin: 10px;
-}
-
-.title-news a div{
-  margin: 30px 0 10px;
-  width: 100px;
-  background-color: #fa8c16;
-}
-
-.title a div span{
-  text-align: center;
+.container-lg .see-all{
+  color: #fa8c16;
 }
 
 .box{
-  background-color: #fa8c16;
+  background-image: radial-gradient(100% 500% at 0% 0%, #fa8c16 0%, #874d00 100%);
 }
 
 .container-box{
@@ -231,7 +196,6 @@ ul {
 }
 
 .container-box .introduce{
-  width: 550px;
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -241,8 +205,8 @@ ul {
 .container-box .introduce p {
   font-size: 20px;
   color: #ffffff;
-  font-weight: bold;
-  padding-left: 20px;
+  font-weight: 500;
+  padding-left: 10px;
 }
 
 .container-box .logo img{
@@ -251,7 +215,7 @@ ul {
 
 
 .container-box  .newapp img{
-  width: 800px;
+  width: 700px;
 }
 
 .container-box .download-app{
@@ -260,6 +224,12 @@ ul {
 }
 
 .container-box .download-app img{
-  width: 150px;
+  width: 100px;
   margin: 10px;
+}
+
+
+a{
+  display: flex;
+  justify-content: space;
 }
