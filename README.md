@@ -1,5 +1,5 @@
 
-link Web: http://btlweb.free.nf/Bai_tap_lon_tkw/public/home.html
+link Web: http://btlweb.free.nf/btl/public/home.html
 
 
 
