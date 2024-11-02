@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/nav-bar.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
+    <title>The Coffee House</title>
+    <link
+      href="/assets/image/logo/favicon_new.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <!--icon-->
+    <link rel="stylesheet" href="/assets/css/login.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="/public/home.html"
+            ><img
+              src="/assets/image/logo/logo.svg"
+              class="img-fluid"
+              alt="Logo"
+          /></a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/order.html"
+                    >Cà phê hạt rang
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/Tintuc.html"
+                    >Tin tức</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/shop.html"
+                    >Cửa hàng
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/voucher.html"
+                    >Khuyến mãi</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="/public/login.html" class="login-button">
+            <img src="/assets/image/logo/Login.70dc3d8.png" alt=""
+          /></a>
+          <a href="/public/giohang.html" class="login-cart">
+            <img src="/assets/image/logo/Carticon.373916c.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler pe-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="/assets/image/login/ang-login.png" alt="anh-login" />
+      </div>
+      <div class="login-body">
+        <p>Chào mừng bạn đến với</p>
+        <img src="/assets/image/login/logo.svg" alt="logo" />
+        <form id="loginForm">
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Nhập số điện thoại"
+            required
+          />
+          <span
+            id="error-message"
+            style="display: none; color: rgba(255, 0, 0, 0.8)"
+          ></span>
+          <button type="submit">Đăng Nhập</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/assets/javascript/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/nav-bar.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
+    <title>The Coffee House</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/voucher.css" />
+    <link
+      href="/assets/image/logo/favicon_new.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <!--icon-->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="/public/home.html"
+            ><img
+              src="/assets/image/logo/logo.svg"
+              class="img-fluid"
+              alt="Logo"
+          /></a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/order.html"
+                    >Cà phê hạt rang
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/Tintuc.html"
+                    >Tin tức</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/shop.html"
+                    >Cửa hàng
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="/public/voucher.html"
+                    >Khuyến mãi</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="/public/login.html" class="login-button">
+            <img src="/assets/image/logo/Login.70dc3d8.png" alt=""
+          /></a>
+          <a href="/public/giohang.html" class="login-cart">
+            <img src="/assets/image/logo/Carticon.373916c.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler pe-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="promo-container">
+      <div class="promo-title">
+        <i
+          class="fa-regular fa-circle-xmark"
+          onclick="window.location.href='order.html';"
+        ></i>
+        <h2>Khuyến mãi</h2>
+      </div>
+      <div class="promo-code-container">
+        <input type="text" id="promoCode" placeholder="Nhập mã khuyến mãi" />
+        <button id="applyButton" onclick="applyPromoCode()">Áp dụng</button>
+      </div>
+      <h6>Các ưu đãi tốt nhất cho bạn</h6>
+      <div class="promo-item">
+        <img src="/assets/image/voucher/20k.jpg" alt="Promo 1" />
+        <div class="promo-details">
+          <p>Giảm 20k</p>
+          <p>Hết hạn trong 5 ngày</p>
+          <span class="promo-button" onclick="usePromo('20k')"
+            >Sử dụng ngay</span
+          >
+        </div>
+      </div>
+      <div class="promo-item">
+        <img src="/assets/image/voucher/10.jpg" alt="Promo 2" />
+        <div class="promo-details">
+          <p>Giảm 10%</p>
+          <p>Hết hạn trong 2 ngày</p>
+          <span class="promo-button" onclick="usePromo('10%')"
+            >Sử dụng ngay</span
+          >
+        </div>
+      </div>
+      <div class="promo-item">
+        <img src="/assets/image/voucher/39k+freeship.jpg" alt="Promo 3" />
+        <div class="promo-details">
+          <p>Freeship cho đơn từ 39k</p>
+          <p>Hết hạn trong 3 ngày</p>
+          <span class="promo-button" onclick="usePromo('39k')"
+            >Sử dụng ngay</span
+          >
+        </div>
+      </div>
+      <div class="promo-item">
+        <img src="/assets/image/voucher/30+freeship.jpg" alt="Promo 4" />
+        <div class="promo-details">
+          <p>Giảm 30% + Freeship</p>
+          <p>Hết hạn trong 4 ngày</p>
+          <span class="promo-button" onclick="usePromo('30%')"
+            >Sử dụng ngay</span
+          >
+        </div>
+      </div>
+      <div class="promo-item">
+        <img src="/assets/image/voucher/30k.jpg" alt="Promo 5" />
+        <div class="promo-details">
+          <p>Giảm 30K</p>
+          <p>Hết hạn trong 1 ngày</p>
+          <span class="promo-button" onclick="usePromo('30k')"
+            >Sử dụng ngay</span
+          >
+        </div>
+      </div>
+      <div class="promo-item">
+        <img src="/assets/image/voucher/freeship.jpg" alt="Promo 6" />
+        <div class="promo-details">
+          <p>Miễn Phí Giao Hàng</p>
+          <p>Hết hạn trong 3 ngày</p>
+          <span class="promo-button" onclick="usePromo('freeship')"
+            >Sử dụng ngay</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/javascript/voucher.js"></script>
+  </body>
+</html>
