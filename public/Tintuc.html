@@ -5,161 +5,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin Tức Mới Nhất</title>
     <link rel="stylesheet" href="/assets/css/Tintuc.css">
-    <link href="/assets/image/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/assets/image/Tintuc/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="/assets/css/Tintuc.css">
+    <link rel="stylesheet" href="/assets/css/nav-bar.css">
+    
 </head>
 <body>
-    <div class="news-tab d-flex justify-content-center my-3">
-        <ul class="navbar-nav flex-row nav nav-tabs border-0" id="newsTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link mx-3 fs-7 active px-3 py-2" id="coffee-tab" data-bs-toggle="tab" href="#coffee" role="tab" aria-controls="coffee" aria-selected="true">#COFFEELOVER</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-3 fs-7 px-3 py-2" id="homeupdate-tab" data-bs-toggle="tab" href="#homeupdate" role="tab" aria-controls="homeupdate" aria-selected="false">CẬP NHẬT TỪ NHÀ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-3 fs-7 px-3 py-2" id="offer-tab" data-bs-toggle="tab" href="#offer" role="tab" aria-controls="offer" aria-selected="false">ƯU ĐÃI ĐẶC BIỆT</a>
-            </li>
-        </ul>
-    </div>
-    
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="/public/home.html"
+            ><img
+              src="/assets/image/logo/logo.svg"
+              class="img-fluid"
+              alt="Logo"
+          /></a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="order.html" target="_parent">Cà phê hạt rang </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="Tintuc.html" target="_parent">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="shop.html" target="_parent">Cửa hàng </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#voucher.html">Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="login-button">Login</a>
+          <button
+            class="navbar-toggler pe-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+     
+    <div class="baoboc">
+        <div class="news-tab d-flex justify-content-center my-3">
+            <ul class="navbar-nav flex-row nav nav-tabs border-0" id="newsTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link tintuc mx-3 fs-7 active px-3 py-2" id="coffee-tab" data-bs-toggle="tab" href="#coffee" role="tab" aria-controls="coffee" aria-selected="true">#COFFEELOVER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tintuc mx-3 fs-7 px-3 py-2" id="homeupdate-tab" data-bs-toggle="tab" href="#homeupdate" role="tab" aria-controls="homeupdate" aria-selected="false">CẬP NHẬT TỪ NHÀ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tintuc mx-3 fs-7 px-3 py-2" id="offer-tab" data-bs-toggle="tab" href="#offer" role="tab" aria-controls="offer" aria-selected="false">ƯU ĐÃI ĐẶC BIỆT</a>
+                </li>
+            </ul>
+        </div>
+        
 
-    <div class="container my-4 my-4 tab-content" id="newsTabContent">
-        <div class="tab-pane fade show" id="offer" role="tabpanel" aria-labelledby="offer-tab">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-1.jpg" class="card-img-top" alt="Sáng thấy lag lag? Khum sao đã có lắc lắc.">
-                        <div class="card-body">
-                            <p class="card-text">Sáng thấy lag lag? Khum sao đã có lắc lắc 😏</p>
-                            <a href="Tintuc-nd.html?form=a" class="btn btn-warning">Đọc tiếp</a>
+        <div class="container my-4 my-4 tab-content" id="newsTabContent">
+            <div class="tab-pane fade show" id="offer" role="tabpanel" aria-labelledby="offer-tab">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-1.jpg" class="card-img-top" alt="Sáng thấy lag lag? Khum sao đã có lắc lắc.">
+                            <div class="card-body">
+                                <p class="card-text">Sáng thấy lag lag? Khum sao đã có lắc lắc 😏</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=a" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-2.jpg" class="card-img-top" alt="Deal xinh yêu đây rồi: Giảm 50% + Freeship">
-                        <div class="card-body">
-                            <p class="card-text">Deal xinh yêu đây rồiii: Giảm 50% + freeship</p>
-                            <a href="Tintuc-nd.html?form=b" class="btn btn-warning">Đọc tiếp</a>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-2.jpg" class="card-img-top" alt="Deal xinh yêu đây rồi: Giảm 50% + Freeship">
+                            <div class="card-body">
+                                <p class="card-text">Deal xinh yêu đây rồiii: Giảm 50% + freeship</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=b" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-3.jpg" class="card-img-top" alt="Cho một nửa thế giới mãi xinh yêu">
-                        <div class="card-body">
-                            <p class="card-text">Cho một nửa thế giới mãi xinh yêu</p>
-                            <a href="Tintuc-nd.html?form=c" class="btn btn-warning">Đọc tiếp</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-3.jpg" class="card-img-top" alt="Cho một nửa thế giới mãi xinh yêu">
+                            <div class="card-body">
+                                <p class="card-text">Cho một nửa thế giới mãi xinh yêu</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=c" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-4.jpg" class="card-img-top" alt="Chớp deal 30% cho cả ngày xanh mood">
-                        <div class="card-body">
-                            <p class="card-text">Chớp deal 30% cho cả ngày xanh mood</p>
-                            <a href="Tintuc-nd.html?form=d" class="btn btn-warning">Đọc tiếp</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-4.jpg" class="card-img-top" alt="Chớp deal 30% cho cả ngày xanh mood">
+                            <div class="card-body">
+                                <p class="card-text">Chớp deal 30% cho cả ngày xanh mood</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=d" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-5.jpg" class="card-img-top" alt="Say hi deal hot nhất tháng">
-                        <div class="card-body">
-                            <p class="card-text">"Say hi" deal hot nhất tháng</p>
-                            <a href="Tintuc-nd.html?form=e" class="btn btn-warning">Đọc tiếp</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-5.jpg" class="card-img-top" alt="Say hi deal hot nhất tháng">
+                            <div class="card-body">
+                                <p class="card-text">"Say hi" deal hot nhất tháng</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=e" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-6.jpg" class="card-img-top" alt="Freeship dù chỉ 1 ly">
-                        <div class="card-body">
-                            <p class="card-text">Freeship dù chỉ 1 ly</p>
-                            <a href="Tintuc-nd.html?form=f" class="btn btn-warning">Đọc tiếp</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-6.jpg" class="card-img-top" alt="Freeship dù chỉ 1 ly">
+                            <div class="card-body">
+                                <p class="card-text">Freeship dù chỉ 1 ly</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=f" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="tab-pane fade show active" id="coffee" role="tabpanel" aria-labelledby="coffee-tab">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-cf1.jpg" class="card-img-top" alt="Nghệ thuật pha chế -V60">
+                            <div class="card-body">
+                                <p class="card-text">Nghệ thuật pha chế -V60</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=cf(1)" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-cf2.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Kalita Wave">
+                            <div class="card-body">
+                                <p class="card-text">Nghệ thuật pha chế - Kalita Wave</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=cf(2)" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-cf3.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Cold Brew">
+                            <div class="card-body">
+                                <p class="card-text">Nghệ thuật pha chế - Cold Brew</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=cf(3)" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="tab-pane fade show" id="homeupdate" role="tabpanel" aria-labelledby="homeupdate-tab">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-update1.jpg" class="card-img-top" alt="Nào cùng lắc to the max">
+                            <div class="card-body">
+                                <p class="card-text">🙌 Nào cùng lắc to the max 🙌</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=update(1)" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-update2.jpg" class="card-img-top" alt="Thanh Hóa ơi, cảm ơn bạn đã đồng hành cùng nhà">
+                            <div class="card-body">
+                                <p class="card-text">Thanh Hóa ơi, cảm ơn bạn đã đồng hành cùng nhà</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=update(2)" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/assets/image/Tintuc/anh-btl-update3.jpg" class="card-img-top" alt="Trà xanh Tây Bắc là matcha đất Việt">
+                            <div class="card-body">
+                                <p class="card-text">Trà xanh Tây Bắc là matcha đất Việt</p>
+                                <div class="d-flex justify-content-between">
+                                  <div></div>
+                                  <a href="Tintuc-nd.html?form=update(3)" class="btn btn-warning">Đọc tiếp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="tab-pane fade show active" id="coffee" role="tabpanel" aria-labelledby="coffee-tab">
+        <footer class="mt-4">
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-cf1.jpg" class="card-img-top" alt="Nghệ thuật pha chế -V60">
-                        <div class="card-body">
-                            <p class="card-text">Nghệ thuật pha chế -V60</p>
-                            <a href="Tintuc-nd.html?form=cf(1)" class="btn btn-warning">Đọc tiếp</a>
-                        </div>
+              <div class="foot1 col-lg-4 col-md-8 col-sm-12">
+                <div class="in_foot1">
+                  <div class="in_in_foot1">
+                    <div class="logo">
+                      <img src="/assets/image/logo/logocafe_footer.png" />
                     </div>
-                </div>   
-
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-cf2.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Kalita Wave">
-                        <div class="card-body">
-                            <p class="card-text">Nghệ thuật pha chế - Kalita Wave</p>
-                            <a href="Tintuc-nd.html?form=cf(2)" class="btn btn-warning">Đọc tiếp</a>
-                        </div>
+                    <div class="list_foot col-lg-6 col-md-10 col-sm-12">
+                      <ul>
+                        <li><i class="fa-brands fa-facebook fs-2"></i></li>
+                        <li><i class="fa-brands fa-youtube fs-2"></i></li>
+                        <li><i class="fa-brands fa-instagram fs-2"></i></li>
+                      </ul>
                     </div>
-                </div>   
-
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-cf3.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Cold Brew">
-                        <div class="card-body">
-                            <p class="card-text">Nghệ thuật pha chế - Cold Brew</p>
-                            <a href="Tintuc-nd.html?form=cf(3)" class="btn btn-warning">Đọc tiếp</a>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div> 
-
-        <div class="tab-pane fade show" id="homeupdate" role="tabpanel" aria-labelledby="homeupdate-tab">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-update1.jpg" class="card-img-top" alt="Nào cùng lắc to the max">
-                        <div class="card-body">
-                            <p class="card-text">🙌 Nào cùng lắc to the max 🙌</p>
-                            <a href="Tintuc-nd.html?form=update(1)" class="btn btn-warning">Đọc tiếp</a>
-                        </div>
+      
+            <div class="foot2">
+              <div class="in_foot2">
+                <div class="in_in_foot2">
+                  <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8 col-12 mb-3 mb-md-0">
+                      <div class="content">
+                        <p class="text-wrap">
+                          Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
+                        </p>
+                        <p class="text-wrap">
+                          Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp
+                          ngày 23/07/2014
+                        </p>
+                        <p class="text-wrap">Người đại diện: NGÔ NGUYÊN KHA</p>
+                        <p class="text-wrap">
+                          Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh
+                        </p>
+                        <p class="text-wrap">
+                          Điện thoại: (028) 7107 8079 Email: hi@thecoffeehouse.vn
+                        </p>
+                        <p class="text-wrap">
+                          © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
+                          mọi quyền bảo lưu
+                        </p>
+                      </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-update2.jpg" class="card-img-top" alt="Thanh Hóa ơi, cảm ơn bạn đã đồng hành cùng nhà">
-                        <div class="card-body">
-                            <p class="card-text">Thanh Hóa ơi, cảm ơn bạn đã đồng hành cùng nhà</p>
-                            <a href="Tintuc-nd.html?form=update(2)" class="btn btn-warning">Đọc tiếp</a>
-                        </div>
+                    <div class="col-lg-4 col-md-4 col-12 text-center text-md-end">
+                      <div class="logo">
+                        <img src="/assets/image/logo/logo_footer.png" />
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="/assets/image/anh-btl-update3.jpg" class="card-img-top" alt="Trà xanh Tây Bắc là matcha đất Việt">
-                        <div class="card-body">
-                            <p class="card-text">Trà xanh Tây Bắc là matcha đất Việt</p>
-                            <a href="Tintuc-nd.html?form=update(3)" class="btn btn-warning">Đọc tiếp</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-
+          </footer>
     </div>
 </body>
 </html>
