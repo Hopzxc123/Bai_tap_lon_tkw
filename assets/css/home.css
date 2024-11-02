@@ -9,9 +9,13 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-a {
-  color: black t;
+a{
+  color: black !important;
   text-decoration: none !important;
+}
+
+.offcanvas-body a{
+  color: #ffffff !important;
 }
 
 ul {

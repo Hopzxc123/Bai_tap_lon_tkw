@@ -11,8 +11,12 @@
     background-color: #e2e6ea; /* Nền khi hover */
 }
 
+#coffee-tab, #homeupdate-tab, #offer-tab{
+    color: #6c757d;
+}
+
 .nav-tabs .tintuc.active {
-    color: #fff; /* Màu chữ khi chọn */
+    color: #fff !important; /* Màu chữ khi chọn */
     background-color: #ffb141; /* Màu nền khi chọn */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ cho nổi bật */
 }
@@ -23,4 +27,5 @@
 
 .baoboc .news-tab .nav-link::before{
     visibility: hidden;
-  }
+}
+
