@@ -3,79 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/image/logo/favicon_new.ico">
-    <title>Tin Tức Mới Nhất</title>
-    <link rel="stylesheet" href="/assets/css/Tintuc.css">
+    <title>The Coffee House</title>
+    <link rel="stylesheet" href="../assets/css/Tintuc.css">
+    <link href="../assets/image/Tintuc/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <script src="../assets/javascript/js/bootstrap.bundle.min.js"></script>
+    <link href="../assets/image/logo/favicon_new.ico" rel="icon" type="image/x-icon" /> <!--icon-->
+    <link rel="stylesheet" href="../assets/css/nav-bar.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
     
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
-    
-    <link rel="stylesheet" href="/assets/css/Tintuc.css">
-    <link rel="stylesheet" href="/assets/css/nav-bar.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /><!--icon footer-->
 </head>
 <body>
-  <header>
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="/public/home.html"
-          ><img
-            src="/assets/image/logo/logo.svg"
-            class="img-fluid"
-            alt="Logo"
-        /></a>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="../public/home.html"
+            ><img
+              src="../assets/image/logo/logo.svg"
+              class="img-fluid"
+              alt="Logo"
+          /></a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../public/order.html">Cà phê hạt rang </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../public/Tintuc.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../public/shop.html">Cửa hàng </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../public/voucher.html">Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="/public/order.html">Cà phê hạt rang </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="/public/Tintuc.html">Tin tức</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="/public/shop.html">Cửa hàng </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="/public/voucher.html">Khuyến mãi</a>
-              </li>
-            </ul>
-          </div>
+          <a href="#" class="login-button" onclick="window.location.href='../public/login.html';">
+            <img src="../assets/image/logo/Login.70dc3d8.png" alt="" />
+        </a>
+        
+        <a href="#" class="giohang-button position-relative" onclick="window.location.href='../public/giohang.html';">
+            <img src="../assets/image/logo/Carticon.373916c.png" alt="" style="width: 70px; height: 70px;" />
+            <span id="cart-count" class="position-absolute translate-middle badge rounded-pill bg-danger">
+                0
+            </span>
+        </a>
+          <button
+            class="navbar-toggler pe-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-        <a href="/public/login.html" class="login-button">
-          <img src="/assets/image/logo/Login.70dc3d8.png" alt=""
-        /></a>
-        <a href="/public/giohang.html" class="login-cart">
-          <img src="/assets/image/logo/Carticon.373916c.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler pe-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
-  </header>
+      </nav>
      
     <div class="baoboc">
         <div class="news-tab d-flex justify-content-center my-3">
@@ -98,7 +96,7 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-1.jpg" class="card-img-top" alt="Sáng thấy lag lag? Khum sao đã có lắc lắc.">
+                            <img src="../assets/image/tintuc/anh-btl-1.jpg" class="card-img-top" alt="Sáng thấy lag lag? Khum sao đã có lắc lắc.">
                             <div class="card-body">
                                 <p class="card-text">Sáng thấy lag lag? Khum sao đã có lắc lắc 😏</p>
                                 <div class="d-flex justify-content-between">
@@ -111,7 +109,7 @@
                     
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-2.jpg" class="card-img-top" alt="Deal xinh yêu đây rồi: Giảm 50% + Freeship">
+                            <img src="../assets/image/tintuc/anh-btl-2.jpg" class="card-img-top" alt="Deal xinh yêu đây rồi: Giảm 50% + Freeship">
                             <div class="card-body">
                                 <p class="card-text">Deal xinh yêu đây rồiii: Giảm 50% + freeship</p>
                                 <div class="d-flex justify-content-between">
@@ -124,7 +122,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-3.jpg" class="card-img-top" alt="Cho một nửa thế giới mãi xinh yêu">
+                            <img src="../assets/image/tintuc/anh-btl-3.jpg" class="card-img-top" alt="Cho một nửa thế giới mãi xinh yêu">
                             <div class="card-body">
                                 <p class="card-text">Cho một nửa thế giới mãi xinh yêu</p>
                                 <div class="d-flex justify-content-between">
@@ -137,7 +135,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-4.jpg" class="card-img-top" alt="Chớp deal 30% cho cả ngày xanh mood">
+                            <img src="../assets/image/tintuc/anh-btl-4.jpg" class="card-img-top" alt="Chớp deal 30% cho cả ngày xanh mood">
                             <div class="card-body">
                                 <p class="card-text">Chớp deal 30% cho cả ngày xanh mood</p>
                                 <div class="d-flex justify-content-between">
@@ -150,7 +148,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-5.jpg" class="card-img-top" alt="Say hi deal hot nhất tháng">
+                            <img src="../assets/image/tintuc/anh-btl-5.jpg" class="card-img-top" alt="Say hi deal hot nhất tháng">
                             <div class="card-body">
                                 <p class="card-text">"Say hi" deal hot nhất tháng</p>
                                 <div class="d-flex justify-content-between">
@@ -163,7 +161,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-6.jpg" class="card-img-top" alt="Freeship dù chỉ 1 ly">
+                            <img src="../assets/image/tintuc/anh-btl-6.jpg" class="card-img-top" alt="Freeship dù chỉ 1 ly">
                             <div class="card-body">
                                 <p class="card-text">Freeship dù chỉ 1 ly</p>
                                 <div class="d-flex justify-content-between">
@@ -180,7 +178,7 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-cf1.jpg" class="card-img-top" alt="Nghệ thuật pha chế -V60">
+                            <img src="../assets/image/tintuc/anh-btl-cf1.jpg" class="card-img-top" alt="Nghệ thuật pha chế -V60">
                             <div class="card-body">
                                 <p class="card-text">Nghệ thuật pha chế -V60</p>
                                 <div class="d-flex justify-content-between">
@@ -193,7 +191,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-cf2.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Kalita Wave">
+                            <img src="../assets/image/tintuc/anh-btl-cf2.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Kalita Wave">
                             <div class="card-body">
                                 <p class="card-text">Nghệ thuật pha chế - Kalita Wave</p>
                                 <div class="d-flex justify-content-between">
@@ -206,7 +204,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-cf3.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Cold Brew">
+                            <img src="../assets/image/tintuc/anh-btl-cf3.jpg" class="card-img-top" alt="Nghệ thuật pha chế - Cold Brew">
                             <div class="card-body">
                                 <p class="card-text">Nghệ thuật pha chế - Cold Brew</p>
                                 <div class="d-flex justify-content-between">
@@ -223,7 +221,7 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-update1.jpg" class="card-img-top" alt="Nào cùng lắc to the max">
+                            <img src="../assets/image/tintuc/anh-btl-update1.jpg" class="card-img-top" alt="Nào cùng lắc to the max">
                             <div class="card-body">
                                 <p class="card-text">🙌 Nào cùng lắc to the max 🙌</p>
                                 <div class="d-flex justify-content-between">
@@ -236,7 +234,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-update2.jpg" class="card-img-top" alt="Thanh Hóa ơi, cảm ơn bạn đã đồng hành cùng nhà">
+                            <img src="../assets/image/tintuc/anh-btl-update2.jpg" class="card-img-top" alt="Thanh Hóa ơi, cảm ơn bạn đã đồng hành cùng nhà">
                             <div class="card-body">
                                 <p class="card-text">Thanh Hóa ơi, cảm ơn bạn đã đồng hành cùng nhà</p>
                                 <div class="d-flex justify-content-between">
@@ -249,7 +247,7 @@
 
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <img src="/assets/image/Tintuc/anh-btl-update3.jpg" class="card-img-top" alt="Trà xanh Tây Bắc là matcha đất Việt">
+                            <img src="../assets/image/tintuc/anh-btl-update3.jpg" class="card-img-top" alt="Trà xanh Tây Bắc là matcha đất Việt">
                             <div class="card-body">
                                 <p class="card-text">Trà xanh Tây Bắc là matcha đất Việt</p>
                                 <div class="d-flex justify-content-between">
@@ -265,36 +263,36 @@
         </div>
 
         <footer>
-          <div class="foot1">
-              <div class="in_foot1">
-                  <div class="in_in_foot1">
-                      <div class="logo"><img src="../assets/image/order/logocafe_footer.png"></div>
-                      <div class="list_foot">
-                          <ul>
-                              <li><a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a></li>
-                              <li><a href="#" class="yt"><i class="fa-brands fa-youtube"></i></a></li>
-                              <li><a href="#" class="ins"><i class="fa-brands fa-instagram"></i></a></i></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <div class="foot1">
+            <div class="in_foot1">
+                <div class="in_in_foot1">
+                    <div class="logo"><img src="../assets/image/order/logocafe_footer.png"></div>
+                    <div class="list_foot">
+                        <ul>
+                            <li><a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#" class="yt"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#" class="ins"><i class="fa-brands fa-instagram"></i></a></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
   
-          <div class="foot2">
-              <div class="in_foot2">
-                  <div class="in_in_foot2">
-                      <div class="content">
-                          <p>Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</p>
-                          <p>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014</p>
-                          <p>Người đại diện: NGÔ NGUYÊN KHA</p>
-                          <p>Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh Điện thoại: (028) 7107 8079
-                              Email: hi@thecoffeehouse.vn</p>
-                          <p>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</p>
-                      </div>
-                      <div class="logo"><img src="../assets/image/order/logo_footer.png"></div>
-                  </div>
-              </div>
-          </div>
+        <div class="foot2">
+            <div class="in_foot2">
+                <div class="in_in_foot2">
+                    <div class="content">
+                        <p>Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</p>
+                        <p>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014</p>
+                        <p>Người đại diện: NGÔ NGUYÊN KHA</p>
+                        <p>Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh Điện thoại: (028) 7107 8079
+                            Email: hi@thecoffeehouse.vn</p>
+                        <p>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</p>
+                    </div>
+                    <div class="logo"><img src="../assets/image/order/logo_footer.png"></div>
+                </div>
+            </div>
+        </div>
       </footer>
     </div>
 </body>

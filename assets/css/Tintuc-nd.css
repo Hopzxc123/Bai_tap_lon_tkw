@@ -1,37 +1,53 @@
-form{
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-form h1{
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
+form h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-form img{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+form img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
-form p{
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 15px;
+form p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-.baoboc1{
-    margin-top: 115px;
+.baoboc1 {
+  margin-top: 115px;
 }
 
 .nav-link {
-    color: #fff;
-    font-weight: 500;
-    position: relative;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+/* -- số trên logo giỏ hàng--*/
+#cart-count {
+  top: 27%; /* Điều chỉnh vị trí từ trên xuống */
+  right: 3px; /* Điều chỉnh vị trí từ phải qua */
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+@media (max-width: 768px) {
+  #cart-count {
+    top: 27%; /* Điều chỉnh vị trí từ trên xuống */
+    right: 3px; /* Điều chỉnh vị trí từ phải qua */
+    font-size: 12px;
+    padding: 2px 6px;
   }
+}

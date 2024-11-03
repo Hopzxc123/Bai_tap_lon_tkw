@@ -10,12 +10,8 @@ body {
 }
 
 a {
-  color: black !important;
+  color: black t;
   text-decoration: none !important;
-}
-
-.offcanvas-body a{
-  color: #ffffff !important;
 }
 
 ul {
@@ -64,6 +60,61 @@ ul {
   font-size: 15px;
   color: #b2b2b2;
   text-align: center;
+}
+@media (max-width: 992px) {
+  #carouselExampleDark {
+    margin-top: 80px !important;
+  }
+}
+@media (max-width: 568px) {
+  .tab-item .item {
+    width: fit-content !important;
+    height: fit-content !important;
+  }
+}
+
+/*---------------thông báo-------------*/
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  font-size: 17px;
+  padding: 16px;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 .tab-item .item {
@@ -228,4 +279,20 @@ ul {
 a {
   display: flex;
   justify-content: space;
+}
+/* -- số trên logo giỏ hàng--*/
+#cart-count {
+  top: 27%; /* Điều chỉnh vị trí từ trên xuống */
+  right: 3px; /* Điều chỉnh vị trí từ phải qua */
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+@media (max-width: 768px) {
+  #cart-count {
+    top: 27%; /* Điều chỉnh vị trí từ trên xuống */
+    right: 3px; /* Điều chỉnh vị trí từ phải qua */
+    font-size: 12px;
+    padding: 2px 6px;
+  }
 }

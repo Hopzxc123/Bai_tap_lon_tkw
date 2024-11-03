@@ -1,31 +1,48 @@
 /* Làm đẹp các tab */
 .nav-tabs .tintuc {
-    color: #6c757d; /* Màu chữ mặc định */
-    background-color: #f8f9fa; /* Nền mặc định */
-    border-radius: 20px; /* Làm tròn góc cạnh */
-    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển mượt */
+  color: #6c757d; /* Màu chữ mặc định */
+  background-color: #f8f9fa; /* Nền mặc định */
+  border-radius: 20px; /* Làm tròn góc cạnh */
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển mượt */
 }
 
 .nav-tabs .tintuc:hover {
-    color: #ffb141; /* Màu khi hover */
-    background-color: #e2e6ea; /* Nền khi hover */
+  color: #ffb141; /* Màu khi hover */
+  background-color: #e2e6ea; /* Nền khi hover */
 }
 
-#coffee-tab, #homeupdate-tab, #offer-tab{
-    color: #6c757d;
+#coffee-tab,
+#homeupdate-tab,
+#offer-tab {
+  color: #6c757d;
 }
 
 .nav-tabs .tintuc.active {
-    color: #fff !important; /* Màu chữ khi chọn */
-    background-color: #ffb141; /* Màu nền khi chọn */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ cho nổi bật */
+  color: #fff !important; /* Màu chữ khi chọn */
+  background-color: #ffb141 !important; /* Màu nền khi chọn */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ cho nổi bật */
 }
 
-.baoboc{
-    margin-top: 115px;
+.baoboc {
+  margin-top: 115px;
 }
 
-.baoboc .news-tab .nav-link::before{
-    visibility: hidden;
+.baoboc .news-tab .nav-link::before {
+  visibility: hidden;
+}
+/* -- số trên logo giỏ hàng--*/
+#cart-count {
+  top: 27%; /* Điều chỉnh vị trí từ trên xuống */
+  right: 3px; /* Điều chỉnh vị trí từ phải qua */
+  font-size: 12px;
+  padding: 2px 6px;
 }
 
+@media (max-width: 768px) {
+  #cart-count {
+    top: 27%; /* Điều chỉnh vị trí từ trên xuống */
+    right: 3px; /* Điều chỉnh vị trí từ phải qua */
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+}

@@ -7,75 +7,87 @@
     <title>The Coffee House</title>
     <!-- hearder -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <script src="../assets/javascript/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>-->
     <!-- hearder -->
-    <link href="/assets/image/logo/favicon_new.ico" rel="icon" type="image/x-icon" /> <!--icon-->
+    <link href="../assets/image/logo/favicon_new.ico" rel="icon" type="image/x-icon" /> <!--icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /><!--icon footer-->
     <link rel="stylesheet" href="../assets/css/order.css"> <!--css order-->
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <script src="../assets/javascript/order.js"></script>
+        
+        
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="/public/home.html"
-              ><img
-                src="/assets/image/logo/logo.svg"
-                class="img-fluid"
-                alt="Logo"
-            /></a>
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
+            <div class="container-fluid">
+              <a class="navbar-brand me-auto" href="../public/home.html"
+                ><img
+                  src="../assets/image/logo/logo.svg"
+                  class="img-fluid"
+                  alt="Logo"
+              /></a>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" href="../public/home.html">Đặt Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" href="../public/Tintuc.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" href="../public/shop.html">Cửa hàng </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" href="../public/voucher.html">Khuyến mãi</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/home.html">Đặt Hàng</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/Tintuc.html">Tin tức</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/shop.html">Cửa hàng </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/voucher.html">Khuyến mãi</a>
-                  </li>
-                </ul>
-              </div>
+              <a href="#" class="login-button" onclick="window.location.href='../public/login.html';">
+                <img src="../assets/image/logo/Login.70dc3d8.png" alt="" />
+            </a>
+            
+            <a href="#" class="giohang-button position-relative" onclick="window.location.href='../public/giohang.html';">
+                <img src="../assets/image/logo/Carticon.373916c.png" alt="" style="width: 70px; height: 70px;" />
+                <span id="cart-count" class="position-absolute translate-middle badge rounded-pill bg-danger">
+                    0
+                </span>
+            </a>
+              <button
+                class="navbar-toggler pe-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-            <a href="/public/login.html" class="login-button">
-              <img src="/assets/image/logo/Login.70dc3d8.png" alt=""
-            /></a>
-            <a href="/public/giohang.html" class="login-cart">
-              <img src="/assets/image/logo/Carticon.373916c.png" alt=""
-            /></a>
-            <button
-              class="navbar-toggler pe-0"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </nav>
+          </nav>
       </header>
+   
     <main>
         <!-- slide show -->
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -89,13 +101,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="/assets/image/order/anh1.jpg" class="d-block w-100" alt="" />
+                    <img src="../assets/image/order/anh1.jpg" class="d-block w-100" alt="" />
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="/assets/image/order/anh2.jpg" class="d-block w-100" alt="" />
+                    <img src="../assets/image/order/anh2.jpg" class="d-block w-100" alt="" />
                 </div>
                 <div class="carousel-item">
-                    <img src="/assets/image/order/anh3.jpg" class="d-block w-100" alt="" />
+                    <img src="../assets/image/order/anh3.jpg" class="d-block w-100" alt="" />
                 </div>
             </div>
         </div>
@@ -127,7 +139,7 @@
         <div class="tab-content">
             <div class="tab-pane fade show active" id="menu">
                 <div class="container-menu">
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe.jpg"></div>
@@ -138,14 +150,16 @@
                                     <div class="price-and-order">
                                         <p>239.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#" >
+                                                <img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('TÚI TROPICAL GARDEN 200G', 239000)">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe2.jpg"></div>
@@ -156,14 +170,14 @@
                                     <div class="price-and-order    ">
                                         <p>199.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('TÚI VIETNAM TYPICA 200G', 199000)"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe3.jpg"></div>
@@ -174,14 +188,14 @@
                                     <div class="price-and-order    ">
                                         <p>289.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('TÚI ETHIOPIA GUJI SHAKISSO 200G', 289000)"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe4.jpg"></div>
@@ -192,14 +206,14 @@
                                     <div class="price-and-order    ">
                                         <p>199.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('TÚI NUT CRACKER 200G', 199000)"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe5.jpg"></div>
@@ -210,14 +224,14 @@
                                     <div class="price-and-order    ">
                                         <p>199.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('TÚI SIGNATURE PHIN 200G', 199000)"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe6.jpg"></div>
@@ -228,14 +242,14 @@
                                     <div class="price-and-order    ">
                                         <p>199.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('TÚI CAMPFIRE 200G', 199000)"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe7.jpg"></div>
@@ -246,14 +260,14 @@
                                     <div class="price-and-order    ">
                                         <p>300.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('HỘP SIGNATURE PHIN 200G', 300000)"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1"><img src="../assets/image/order/cafe8.jpg"></div>
@@ -264,14 +278,14 @@
                                     <div class="price-and-order    ">
                                         <p>350.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('HỘP SIGNATURE PHIN 200G', 300000)"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe9.jpg"></div>
@@ -282,14 +296,15 @@
                                     <div class="price-and-order    ">
                                         <p>300.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('TÚI TROPICAL GARDEN 200G', 350000)">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe10.jpg"></div>
@@ -300,14 +315,15 @@
                                     <div class="price-and-order    ">
                                         <p>300.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('HỘP CAMPFIRE 200G', 300000)">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe11.jpg"></div>
@@ -317,15 +333,15 @@
                                     </div>
                                     <div class="price-and-order    ">
                                         <p>300.000đ</p>
-                                        <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        <div class="add" style="margin-left:68px;">
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('HỘP VIETNAM TYPICA 200G', 300000)">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/cafe12.jpg"></div>
@@ -335,8 +351,8 @@
                                     </div>
                                     <div class="price-and-order    ">
                                         <p>390.000đ</p>
-                                        <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                        <div class="add" style="margin-left:68px;">
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('HỘP ETHIOPIA GUJI SHAKISSO 200G', 390000)">
                                         </div>
                                     </div>
                                 </div>
@@ -347,7 +363,7 @@
             </div>
             <div class="tab-pane fade" id="menu2">
                 <div class="container-menu">
-                    <a href="#!">
+                    <a href="">
                         <div class="item">
                             <div class="box-item  ">
                                 <div class="box-item-1  "><img src="../assets/image/order/tra.jpg"></div>
@@ -358,7 +374,7 @@
                                     <div class="price-and-order">
                                         <p>100.000đ</p>
                                         <div class="add">
-                                            <a href="#!"><img src="../assets/image/order/dau_cong.svg" alt="" /></a>
+                                            <a href="#"><img src="../assets/image/order/dau_cong.svg" alt="Thêm sản phẩm" id="addItemButton" onclick="addToCart('CÀ PHÊ NGUYÊN HẠT ARABICA TCH 200G', 100000)">
                                         </div>
                                     </div>
                                 </div>
@@ -371,6 +387,26 @@
         <!--end menu-->
         <!--end tab-->
     </main>
+            <!--       thông báo        -->
+            <div id="toast" style="
+            display: none; 
+            opacity: 0;
+            background-color: #f0f9ff; 
+            color: #333;
+            padding: 13px; 
+            border-radius: 8px;
+            font-size: 16px; 
+            position: fixed; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            z-index: 1000; 
+            display: flex; 
+            align-items: center;
+            transform: translateY(20px);
+        ">
+           <span> Thêm vào giỏ hàng thành công!</span>
+        </div>
+        
     <footer>
         <div class="foot1">
             <div class="in_foot1">
@@ -403,6 +439,8 @@
             </div>
         </div>
     </footer>
+    
+    
 </body>
 
 </html>

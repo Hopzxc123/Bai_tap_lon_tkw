@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Coffee House</title>
-    <link rel="stylesheet" href="/assets/css/nav-bar.css" />
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/giohang.css" />
+    <link rel="stylesheet" href="../assets/css/nav-bar.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <script src="../assets/javascript/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/giohang.css" />
     <link
-      href="/assets/image/logo/favicon_new.ico"
+      href="../assets/image/logo/favicon_new.ico"
       rel="icon"
       type="image/x-icon"
     />
     <!--icon-->
+    a
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="/public/home.html"
+          <a class="navbar-brand me-auto" href="../public/home.html"
             ><img
-              src="/assets/image/logo/logo.svg"
+              src="../assets/image/logo/logo.svg"
               class="img-fluid"
               alt="Logo"
           /></a>
@@ -42,33 +43,33 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="/public/order.html"
+                  <a class="nav-link mx-lg-2" href="../public/order.html"
                     >Cà phê hạt rang
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="/public/Tintuc.html"
+                  <a class="nav-link mx-lg-2" href="../public/Tintuc.html"
                     >Tin tức</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="/public/shop.html"
+                  <a class="nav-link mx-lg-2" href="../public/shop.html"
                     >Cửa hàng
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="/public/voucher.html"
+                  <a class="nav-link mx-lg-2" href="../public/voucher.html"
                     >Khuyến mãi</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-          <a href="/public/login.html" class="login-button">
-            <img src="/assets/image/logo/Login.70dc3d8.png" alt=""
+          <a href="../public/login.html" class="login-button">
+            <img src="../assets/image/logo/Login.70dc3d8.png" alt=""
           /></a>
-          <a href="/public/giohang.html" class="login-cart">
-            <img src="/assets/image/logo/Carticon.373916c.png" alt=""
+          <a href="../public/giohang.html" class="login-cart">
+            <img src="../assets/image/logo/Carticon.373916c.png" alt=""
           /></a>
           <button
             class="navbar-toggler pe-0"
@@ -82,145 +83,222 @@
         </div>
       </nav>
     </header>
-    <h1>Xác nhận đơn hàng</h1>
-    <div class="cart-container">
-      <!-- Cột bên trái: Thông tin giao hàng -->
-      <div class="address-form">
-        <div class="cart-header">Thông tin giao hàng</div>
-        <label for="recipientName">Tên người nhận</label>
-        <input
-          type="text"
-          id="recipientName"
-          placeholder="Nhập tên người nhận"
-          required
-        />
-        <span id="recipient-error" style="display: none; color: red"></span>
-        <!-- Thông báo lỗi tên người nhận -->
+    <div class="container my-5">
+      <h1 class="text-center mb-4 mt-3">Xác nhận đơn hàng</h1>
+      <div class="row g-4">
+        <!-- Cột bên trái: Thông tin giao hàng -->
+        <div class="col-lg-6 address-form">
+          <div class="card p-4">
+            <h4 class="cart-header mb-3">Thông tin giao hàng</h4>
 
-        <label for="phone">Số điện thoại</label>
-        <input
-          type="tel"
-          id="phone"
-          placeholder="Nhập số điện thoại"
-          required
-        />
-        <span id="phone-error" style="display: none; color: red"></span>
-        <!-- Thông báo lỗi số điện thoại -->
+            <div class="mb-3">
+              <label for="recipientName" class="form-label"
+                >Tên người nhận</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="recipientName"
+                placeholder="Nhập tên người nhận"
+                required
+              />
+              <span
+                id="recipient-error"
+                style="display: none; color: red"
+              ></span>
+            </div>
 
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Nhập địa chỉ email"
-          required
-        />
-        <span id="email-error" style="display: none; color: red"></span>
-        <!-- Thông báo lỗi email -->
+            <div class="mb-3">
+              <label for="phone" class="form-label">Số điện thoại</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Nhập số điện thoại"
+                required
+              />
+              <span id="phone-error" style="display: none; color: red"></span>
+            </div>
 
-        <label for="address">Địa chỉ giao hàng</label>
-        <textarea
-          id="address"
-          placeholder="Nhập địa chỉ giao hàng"
-          rows="3"
-          required
-        ></textarea>
-        <span id="address-error" style="display: none; color: red"></span>
-        <!-- Thông báo lỗi địa chỉ -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Nhập địa chỉ email"
+                required
+              />
+              <span id="email-error" style="display: none; color: red"></span>
+            </div>
 
-        <label for="instructions">Chỉ dẫn thêm</label>
-        <textarea
-          id="instructions"
-          placeholder="Nhập chỉ dẫn nếu cần"
-          rows="3"
-        ></textarea>
-        <div class="payment-method">
-          <div>Phương thức thanh toán</div>
-          <label>
-            <input type="radio" name="payment" value="cash" checked />
-            <img src="/assets/image/nganhang/nganhang.png" alt="Tiền mặt" />
-            Tiền mặt
-          </label>
-          <label>
-            <input type="radio" name="payment" value="momo" />
-            <img src="/assets/image/nganhang/momo.png" alt="MoMo" /> MoMo
-          </label>
-          <label>
-            <input type="radio" name="payment" value="zalopay" />
-            <img src="/assets/image/nganhang/zalopay.png" alt="ZaloPay" />
-            ZaloPay
-          </label>
-          <label>
-            <input type="radio" name="payment" value="shopeepay" />
-            <img src="/assets/image/nganhang/shopeepay.png" alt="ShopeePay" />
-            ShopeePay
-          </label>
-          <label>
-            <input type="radio" name="payment" value="bank" />
-            <img
-              src="/assets/image/nganhang/nganhang.png"
-              alt="Thẻ ngân hàng"
-            />
-            Thẻ ngân hàng
-          </label>
-        </div>
-      </div>
+            <div class="mb-3">
+              <label for="address" class="form-label">Địa chỉ giao hàng</label>
+              <textarea
+                id="address"
+                class="form-control"
+                placeholder="Nhập địa chỉ giao hàng"
+                rows="3"
+                required
+              ></textarea>
+              <span id="address-error" style="display: none; color: red"></span>
+            </div>
 
-      <!-- Cột bên phải: Thanh toán -->
-      <div class="payment-container">
-        <div class="cart-header">Giỏ Hàng</div>
+            <div class="mb-3">
+              <label for="instructions" class="form-label">Chỉ dẫn thêm</label>
+              <textarea
+                id="instructions"
+                class="form-control"
+                placeholder="Nhập chỉ dẫn nếu cần"
+                rows="3"
+              ></textarea>
+            </div>
 
-        <!-- Danh sách sản phẩm -->
-        <div id="cartItems"></div>
-
-        <!-- Tổng tiền -->
-        <div class="cart-total">
-          <span>Tổng cộng</span>
-          <span id="totalPrice">0đ</span>
-        </div>
-
-        <!-- Các mục phí giao hàng và khuyến mãi -->
-        <div class="additional-fees">
-          <span>Phí giao hàng</span>
-          <span id="shippingFee">0đ</span>
-        </div>
-        <div class="additional-fees">
-          <span class="promo-link" onclick="redirectToVoucher()"
-            >Khuyến mãi</span
-          >
-          <div class="promo-details">
-            <p>Giảm giá: <span id="discount">0 VNĐ</span></p>
-            <!-- Hiển thị số tiền bị trừ -->
-            <p>Giá khuyến mãi: <span id="promo-amount">0 VNĐ</span></p>
-            <!-- Hiển thị số tiền khuyến mãi -->
+            <div class="payment-method mb-3">
+              <h6>Phương thức thanh toán</h6>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="payment"
+                  id="cash"
+                  value="cash"
+                  checked
+                />
+                <label class="form-check-label" for="cash">
+                  <img
+                    src="../assets/image/nganhang/nganhang.png"
+                    alt="Tiền mặt"
+                    class="me-2"
+                  />Tiền mặt
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="payment"
+                  id="momo"
+                  value="momo"
+                />
+                <label class="form-check-label" for="momo">
+                  <img
+                    src="../assets/image/nganhang/momo.png"
+                    alt="MoMo"
+                    class="me-2"
+                  />MoMo
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="payment"
+                  id="zalopay"
+                  value="zalopay"
+                />
+                <label class="form-check-label" for="zalopay">
+                  <img
+                    src="../assets/image/nganhang/zalopay.png"
+                    alt="ZaloPay"
+                    class="me-2"
+                  />ZaloPay
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="payment"
+                  id="shopeepay"
+                  value="shopeepay"
+                />
+                <label class="form-check-label" for="shopeepay">
+                  <img
+                    src="../assets/image/nganhang/shopeepay.png"
+                    alt="ShopeePay"
+                    class="me-2"
+                  />ShopeePay
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="payment"
+                  id="bank"
+                  value="bank"
+                />
+                <label class="form-check-label" for="bank">
+                  <img
+                    src="../assets/image/nganhang/nganhang.png"
+                    alt="Thẻ ngân hàng"
+                    class="me-2"
+                  />Thẻ ngân hàng
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Thành tiền -->
-        <div class="cart-total" style="margin-top: 5px">
-          <span>Thành tiền</span>
-          <span id="finalPrice">0đ</span>
+        <!-- Cột bên phải: Thanh toán -->
+        <div class="col-lg-6">
+          <div class="card p-4">
+            <h4 class="cart-header mb-3">Giỏ Hàng</h4>
+
+            <!-- Danh sách sản phẩm -->
+            <div id="cartItems" class="mb-3"></div>
+
+            <!-- Tổng tiền -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span>Tổng cộng</span>
+              <span id="totalPrice">0đ</span>
+            </div>
+
+            <!-- Phí giao hàng và khuyến mãi -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span>Phí giao hàng</span>
+              <span id="shippingFee">0đ</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="promo-link" onclick="redirectToVoucher()"
+                >Khuyến mãi</span
+              >
+              <div class="promo-details">
+                <p>Giảm giá: <span id="discount">0 VNĐ</span></p>
+                <p>Giá khuyến mãi: <span id="promo-amount">0 VNĐ</span></p>
+              </div>
+            </div>
+
+            <!-- Thành tiền -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span>Thành tiền</span>
+              <span id="finalPrice">0đ</span>
+            </div>
+
+            <!-- Nút thêm món -->
+            <button class="add-item-button" onclick="addItem()">
+              Thêm món
+            </button>
+
+            <!-- Nút xóa tất cả sản phẩm -->
+            <button class="clear-cart-button" onclick="clearCart()">
+              Xóa tất cả đơn hàng
+            </button>
+
+            <!-- Nút đặt hàng -->
+            <button
+              class="checkout-button"
+              id="checkoutButton"
+              onclick="validateForm()"
+              disabled
+            >
+              Đặt hàng
+            </button>
+          </div>
         </div>
-
-        <!-- Nút thêm món -->
-        <button class="add-item-button" onclick="addItem()">Thêm món</button>
-
-        <!-- Nút xóa tất cả sản phẩm -->
-        <button class="clear-cart-button" onclick="clearCart()">
-          Xóa tất cả đơn hàng
-        </button>
-
-        <!-- Nút đặt hàng -->
-        <button
-          class="checkout-button"
-          id="checkoutButton"
-          onclick="validateForm()"
-          disabled
-        >
-          Đặt hàng
-        </button>
       </div>
     </div>
-
-    <script src="/assets/javascript/giohang.js"></script>
+    <script src="../assets/javascript/giohang.js"></script>
   </body>
 </html>

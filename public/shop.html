@@ -6,19 +6,20 @@
     <title>The Coffee House</title>
     <!-- favicon -->
     <link
-      href="/assets/image/logo/favicon_new.ico"
+      href="../assets/image/logo/favicon_new.ico"
       rel="icon"
       type="image/x-icon"
     />
     <!-- favicon -->
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <!-- bootstrap css -->
     <!-- custom css -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <!-- custom css -->
     <!-- bootstrap js -->
-    <script src="/assets/javascript/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/js/bootstrap.bundle.min.js"></script>
     <!-- bootstrap js -->
     <!-- fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,9 +45,9 @@
       <header>
         <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="/public/home.html"
+            <a class="navbar-brand me-auto" href="../public/home.html"
               ><img
-                src="/assets/image/logo/logo.svg"
+                src="../assets/image/logo/logo.svg"
                 class="img-fluid"
                 alt="Logo"
             /></a>
@@ -67,26 +68,30 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/order.html">Cà phê hạt rang </a>
+                    <a class="nav-link mx-lg-2" href="../public/order.html">Cà phê hạt rang </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/Tintuc.html">Tin tức</a>
+                    <a class="nav-link mx-lg-2" href="../public/Tintuc.html">Tin tức</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/shop.html">Cửa hàng </a>
+                    <a class="nav-link mx-lg-2" href="../public/shop.html">Cửa hàng </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/public/voucher.html">Khuyến mãi</a>
+                    <a class="nav-link mx-lg-2" href="../public/voucher.html">Khuyến mãi</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <a href="/public/login.html" class="login-button">
-              <img src="/assets/image/logo/Login.70dc3d8.png" alt=""
-            /></a>
-            <a href="/public/giohang.html" class="login-cart">
-              <img src="/assets/image/logo/Carticon.373916c.png" alt=""
-            /></a>
+            <a href="#" class="login-button" onclick="window.location.href='../public/login.html';">
+              <img src="../assets/image/logo/Login.70dc3d8.png" alt="" />
+          </a>
+          
+          <a href="#" class="giohang-button position-relative" onclick="window.location.href='../public/giohang.html';">
+              <img src="../assets/image/logo/Carticon.373916c.png" alt="" style="width: 70px; height: 70px;" />
+              <span id="cart-count" class="position-absolute translate-middle badge rounded-pill bg-danger">
+                  0
+              </span>
+          </a>
             <button
               class="navbar-toggler pe-0"
               type="button"
@@ -131,21 +136,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <img
-              src="/assets/image/banner/banner.jpg"
+              src="../assets/image/banner/banner.jpg"
               class="d-block w-100"
               alt=""
             />
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
-              src="/assets/image/banner/banner_2.jpg"
+              src="../assets/image/banner/banner_2.jpg"
               class="d-block w-100"
               alt=""
             />
           </div>
           <div class="carousel-item">
             <img
-              src="/assets/image/banner/banner_3.jpg"
+              src="../assets/image/banner/banner_3.jpg"
               class="d-block w-100"
               alt=""
             />
@@ -187,7 +192,7 @@
                   <div class="row">
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/card-img.jpg" alt="" />
+                        <img src="../assets/image/cua_hang/card-img.jpg" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -203,7 +208,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn1.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn1.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -219,7 +224,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn2.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn2.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -235,7 +240,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn4.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn4.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -251,7 +256,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn5.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn5.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -267,7 +272,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn6.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn6.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -283,7 +288,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn7.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn7.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -299,7 +304,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn8.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn8.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -315,7 +320,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn9.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn9.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -332,7 +337,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn10.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn10.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -348,7 +353,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn11.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn11.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -364,7 +369,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hn3.png" alt="" />
+                        <img src="../assets/image/cua_hang/hn3.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -388,7 +393,7 @@
                   <div class="row">
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm1.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm1.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -405,7 +410,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm2.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm2.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -422,7 +427,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm3.png " alt="" />
+                        <img src="../assets/image/cua_hang/hcm3.png " alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -439,7 +444,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm4.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm4.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -455,7 +460,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm5.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm5.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -471,7 +476,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm6.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm6.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -488,7 +493,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm7.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm7.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -504,7 +509,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm8.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm8.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -520,7 +525,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm9.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm9.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -537,7 +542,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm10.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm10.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -554,7 +559,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm11.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm11.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -571,7 +576,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm12.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm12.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -587,7 +592,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm13.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm13.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -604,7 +609,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm14.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm14.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -621,7 +626,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hcm15.png" alt="" />
+                        <img src="../assets/image/cua_hang/hcm15.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -645,7 +650,7 @@
                   <div class="row">
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hp1.png" alt="" />
+                        <img src="../assets/image/cua_hang/hp1.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -661,7 +666,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hp2.png" alt="" />
+                        <img src="../assets/image/cua_hang/hp2.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
@@ -677,7 +682,7 @@
                     </div>
                     <div class="col-lg-6 store-item col-md-10 col-sm-12 mb-2">
                       <div class="card p-3">
-                        <img src="/assets/image/cua_hang/hp3.png" alt="" />
+                        <img src="../assets/image/cua_hang/hp3.png" alt="" />
                         <div class="card-body">
                           <div class="text-section">
                             <small class="card-title">
