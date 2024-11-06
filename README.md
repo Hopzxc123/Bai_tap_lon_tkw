@@ -2,11 +2,11 @@
 Link Web: http://liang.free.nf/btl/public/home.html
 
 
-Bài tập lớn môn thiết kế web
+# **Bài tập lớn môn thiết kế web**
 
-Chủ đề: Quản lý quán Coffee 
+##**Chủ đề: Quản lý quán Coffee** 
 
-Tính năng: Hiện thị sản phẩm, thêm sản phẩm vào giỏ hàng, thanh toán sản phẩm,
+###Tính năng: Hiện thị sản phẩm, thêm sản phẩm vào giỏ hàng, thanh toán sản phẩm,
 
 Thông tin thành viên nhóm 16
 
