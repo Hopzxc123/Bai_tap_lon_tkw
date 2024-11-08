@@ -75,35 +75,20 @@ ul {
   border-radius: 999px;
 }
 
-.container-list-menu {
-  margin: 0 auto;
-}
-
-.list-menu-item {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.menu-item .block-item {
-  padding: 10px;
-}
-
-.menu-item .block {
-  border: 2pxx solid black;
+.menu-item .menu-item-content {
   box-shadow: 10px 10px 30px #e1e1e1;
   border-radius: 10px;
+  padding: 10px;
 }
-
 
 .image-item img {
   width: 100%;
   border-radius: 7%;
 }
 
-.block-item .name-item {
+.name-item {
   width: 100%;
 }
-
 
 .name-item h4 {
   font-size: 15px;
@@ -253,11 +238,11 @@ ul {
     width: 150px;
   }
 
-  .block-item{
+  .menu-item-content a{
     display: flex;
   }
   
-  .block-item .name-item{
+  .menu-item-content .name-item{
     margin-left: 10px;
   }
 
