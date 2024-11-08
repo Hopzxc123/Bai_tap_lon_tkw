@@ -161,15 +161,6 @@ ul {
   height: 35px;
 }
 
-.news-item {
-  width: 25%;
-  padding: 15px;
-}
-
-.news-item img {
-  width: 100%;
-}
-
 .container-lg .see-all {
   color: #fa8c16;
 }
@@ -181,13 +172,6 @@ ul {
     #874d00 100%
   );
   display: block;
-}
-
-.container-box {
-  /* display: flex;
-  justify-content: center; */
-
-  padding: 100px 0;
 }
 
 .container-box .introduce {
@@ -280,10 +264,6 @@ ul {
   .name-item h4 {
     height: 40px;
   }
-}
-
-@media screen and (max-width: 991px) {
-  
 }
 
 @media (max-width: 992px) {
