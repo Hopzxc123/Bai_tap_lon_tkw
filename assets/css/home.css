@@ -10,20 +10,11 @@ body {
 }
 
 a {
-  color: black t;
   text-decoration: none !important;
 }
 
 ul {
   list-style: none;
-}
-
-.banner-item a img {
-  width: 100%;
-}
-
-.contaier {
-  margin-top: 30px;
 }
 
 .menu {
@@ -40,7 +31,7 @@ ul {
 }
 
 .menu-header img {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 10px;
   width: 35px;
   height: 35px;
@@ -55,70 +46,19 @@ ul {
   background-color: rgb(255, 231, 186);
 }
 
+.list-tab-item .nav-link.active h5{
+  color: #fa8c16;
+}
+
 .card-content h5 {
   margin-top: 5px;
   font-size: 15px;
   color: #b2b2b2;
   text-align: center;
 }
-@media (max-width: 992px) {
-  #carouselExampleDark {
-    margin-top: 80px !important;
-  }
-}
-@media (max-width: 568px) {
-  .tab-item .item {
-    width: fit-content !important;
-    height: fit-content !important;
-  }
-}
-
-/*---------------thông báo-------------*/
-#toast {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  position: fixed;
-  z-index: 1;
-  bottom: 30px;
-  left: 50%;
-  font-size: 17px;
-  padding: 16px;
-}
-
-#toast.show {
-  visibility: visible;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
 
 .tab-item .item {
-  width: 90px;
+  width: 104px;
   height: 150px;
 }
 
@@ -154,30 +94,29 @@ ul {
   border-radius: 10px;
 }
 
-.menu-item {
-  margin: 16px 0 0;
-  padding: 0 10px;
-}
-
-.block-item .name-item {
-  width: 100%;
-  height: 50px;
-}
 
 .image-item img {
   width: 100%;
   border-radius: 7%;
 }
 
+.block-item .name-item {
+  width: 100%;
+}
+
+
 .name-item h4 {
   font-size: 15px;
   margin: 10px 0;
   word-spacing: 4px;
+  color: #000;
+  height: 50px;
 }
 
 .price-item {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .price-item p {
@@ -188,7 +127,7 @@ ul {
 .price-item .add {
   padding-top: 4px;
   padding-left: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   border-radius: 999px;
   width: 36px;
   height: 36px;
@@ -216,7 +155,7 @@ ul {
 }
 
 .newspaper img {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 10px;
   width: 35px;
   height: 35px;
@@ -276,10 +215,90 @@ ul {
   margin: 10px;
 }
 
-a {
-  display: flex;
-  justify-content: space;
+/*---------------thông báo-------------*/
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  font-size: 17px;
+  padding: 16px;
 }
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+
+@media  screen and (max-width: 991px) {
+  .tab-item .item {
+    width: 100px !important;
+    box-shadow: none;
+  }
+  .image-item{
+    width: 150px;
+  }
+
+  .block-item{
+    display: flex;
+  }
+  
+  .block-item .name-item{
+    margin-left: 10px;
+  }
+
+  .name-item h4 {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+}
+
+@media (max-width: 992px) {
+  #carouselExampleDark {
+    margin-top: 80px !important;
+  }
+}
+@media (max-width: 568px) {
+  .tab-item .item {
+    width: fit-content !important;
+    height: fit-content !important;
+  }
+}
+
+
 /* -- số trên logo giỏ hàng--*/
 #cart-count {
   top: 27%; /* Điều chỉnh vị trí từ trên xuống */
@@ -288,7 +307,7 @@ a {
   padding: 2px 6px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #cart-count {
     top: 27%; /* Điều chỉnh vị trí từ trên xuống */
     right: 3px; /* Điều chỉnh vị trí từ phải qua */
