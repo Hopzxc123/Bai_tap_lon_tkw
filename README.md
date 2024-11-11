@@ -1,5 +1,5 @@
 
-Link Web: http://liang.free.nf/btl/public/home.html
+Link Web: https://hopzxc123.github.io/Bai_tap_lon_tkw/public/home.html
 
 
 # **Bài tập lớn môn thiết kế web**
