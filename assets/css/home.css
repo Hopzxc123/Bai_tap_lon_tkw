@@ -280,10 +280,3 @@ ul {
     padding: 2px 6px;
   }
 }
-
-@media (max-width: 991px){
-  .list-tab-item {
-    width: 700px;
-    overflow-x: scroll;
-  }
-}
